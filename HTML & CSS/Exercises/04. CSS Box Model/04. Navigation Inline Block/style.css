@@ -1,0 +1,23 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 50px;
+}
+
+header h1, header nav, header nav ul li {
+    display: inline-block;
+}
+
+li a {
+    text-decoration: none;
+    margin: 1em;
+    color: lightseagreen;
+    font-size: 14px;
+}
+
+hr {
+    height: 1px;
+    background-color: black;
+}
