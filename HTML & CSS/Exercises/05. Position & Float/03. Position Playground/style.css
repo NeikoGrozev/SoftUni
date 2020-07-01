@@ -1,0 +1,56 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    margin: 0;
+}
+
+.viewport {
+    position: relative;
+}
+
+.card {
+    display: block;
+    position: absolute;
+}
+
+.first {
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+}
+
+.second {
+    top: calc(50% - 300px);
+    left: calc(50% - 200px);
+}
+
+.viewport.top {
+    background: linear-gradient(to right, #2768c4 0%, #6cc99b 100%);
+    height: 500px;
+}
+
+.viewport.bottom {
+    background: linear-gradient(to right, #c52eea 0%, #eacc7e 100%);
+    height: 800px;
+}
+
+.pic1 {
+    width: 400px;
+    height: 300px;
+}
+
+.pic2 {
+    width: 400px;
+    height: 600px;
+}
+
+.fa {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px black;
+}

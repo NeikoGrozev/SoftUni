@@ -1,0 +1,67 @@
+body {
+    max-width: 1200px;
+    margin: auto;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: rgb(238, 238, 238);
+}
+
+.site-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 36px;
+}
+
+hr {
+    border: 2px solid black;
+}
+
+.pic1 {
+    float: right;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+h2 {
+    clear: both;
+    margin-top: 50px;
+}
+
+.p-right {
+    float: left;
+    width: 55%;
+    padding-right: 10px;
+    margin-top: 0;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 2px solid gray;
+    margin: 0;
+    float: right;
+    width: 40%;
+    padding-top: 0px;
+    padding-left: 40px;
+    padding-bottom: 30px;
+    color: rgb(68, 68, 68);
+}
+
+blockquote p {
+    margin-top: 0;
+}
+
+footer {
+    float: right;
+}
+
+.pic2{
+    float: left;
+    margin-right: 20px;    
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+}
