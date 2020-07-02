@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(238, 238, 238);
+    max-height: 100vh;
+    margin: 0 auto;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+footer{
+    background-color: rgb(102, 102, 102);
+    color:  rgb(255, 255, 255);
+}
+
+header, main, footer{
+    flex-basis: 100%;
+}
+
+header{
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+}
+
+main{
+    padding: 20px 30px;
+}
+
+header, footer{
+    padding-left: 20px;
+}
