@@ -1,0 +1,33 @@
+@media screen and (max-width: 768px) {
+    .main-movie-poster {
+        display: none;
+    }
+    .main-movie ul li {
+        padding: 0;
+    }
+    .main-movie-trailer {
+        width: 75%;
+        height: 85%;
+    }
+    .main-movie ul {
+        display: block;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .main-movie ul, .main-movie-trailer {
+        width: 100%;
+        height: 80%;
+    }
+    .movie-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .movies {
+        margin-bottom: 50px;
+    }
+    .movie {
+        padding: 0;
+    }
+}
