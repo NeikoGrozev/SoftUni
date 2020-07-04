@@ -1,0 +1,93 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+@import url("typography.css");
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 4em;
+}
+
+form, fieldset, legend, label, input {
+    display: block;
+}
+
+form {
+    width: 25em;
+}
+
+form > fieldset {
+    position: relative;
+    background-color: lavender;
+    padding: 2em;
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+}
+
+form > fieldset > legend {
+    width: 10em;
+    background-color: whitesmoke;
+    position: absolute;
+    top: -1.4em;
+    left: -0.1em;    
+    padding: 0.5em 1em;
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+}
+
+form > fieldset > p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+form > fieldset > p > label {
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+form > fieldset > p > input {
+    width: 100%;
+    padding: 0.3em 0.5em 0.3em 2em;
+    border: 0.1em solid darkgray;
+    border-radius: 0.3em;
+}
+
+form > fieldset > p > input:focus, 
+form > fieldset > p > input:hover {
+    border-color: darkgreen;
+}
+
+form > fieldset > p > i {
+    position: absolute;
+    top: 1em;
+    left: 8em;
+    font-size: 0.8em;
+}
+
+form > fieldset > p > input:focus + i, 
+form > fieldset > p > input:hover + i {
+    color: darkgreen;
+}
+
+form > fieldset > input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 0.3em;
+}
+
+@media (max-width: 800px) {
+    form > fieldset > p {
+        flex-direction: column;        
+        align-items: flex-start;
+    }
+
+    form > fieldset > p > i {        
+        top: 2.8em;
+        left: 1em;        
+    }
+}

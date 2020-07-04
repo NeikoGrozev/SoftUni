@@ -1,0 +1,127 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font: 14px/1.5 Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    width: 90%;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 0.2em solid black;
+}
+
+header > h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-left: 1em;
+}
+
+nav {
+    margin-left: auto;
+    display: block;
+}
+
+nav ul {
+    background-color: white;
+    padding: 0.8em;
+    border-radius: 0.3em;
+}
+
+nav ul li {
+    list-style: none outside;
+    display: inline-block;    
+    margin-right: 0.5em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 1;
+    background-color: black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+nav ul li a:focus, nav ul li a:hover {
+    background-color: rgb(76, 99, 122);
+}
+
+.nav-togle, .nav-togle-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    nav {
+        display: none;
+    }
+
+    header {
+        display: block;
+        border-bottom: none;
+    }    
+
+    .nav-togle-button {
+        display: block;
+    }
+
+    .nav-togle-button {
+        display: flex;
+        justify-content: center;
+        padding: 3em 0 0.5em 0;
+        font-size: 1.3em;
+    }
+
+    .nav-togle-button .close {
+        display: none;
+    }
+
+    .nav-togle:checked + header .nav-togle-button .close {
+        display: block;
+    }
+
+    .nav-togle:checked + header .nav-togle-button .open {
+        display: none;
+    }
+
+    .nav-togle:checked + header {
+        display: block;        
+    }
+
+    .nav-togle:checked + header nav {
+        display: flex;
+        border-top: 0.15em solid black;
+        border-bottom: 0.15em solid black;
+    }
+
+    .nav-togle:checked + header nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 100%;
+    }
+
+    .nav-togle:checked + header nav ul li {          
+        padding-bottom: 0.5em;
+    }
+
+    .nav-togle:checked + header nav ul li a {
+        display: flex;        
+        padding: 1em;
+    }
+
+    .nav-togle:checked + header nav ul li:last-child {          
+        padding-bottom: 0;
+    }
+}
