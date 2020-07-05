@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header ul {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+    color: rgb(158, 158, 158);
+    padding: 0 150px;
+    font-size: 1.3em;
+}
+
+/* MAIN */
+
+main {
+    width: 100%;
+}
+
+.first-section {
+    display: flex;
+    margin: 40px 0;
+    height: 1000px;
+}
+
+.first-section-div1 {
+    width: 50%;
+    padding-top: 150px;
+    padding-left: 200px;
+}
+
+.first-section-div2 {
+    width: 100%;
+    background-image: url(./images/beats-landing-main.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.p-firstTitle {
+    text-transform: uppercase;
+    font-size: 4em;
+    margin: 16px 0;
+}
+
+.p-firstContent {
+    font-size: 1.2em;
+}
+
+.view-more {
+    background-color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: 200;
+    padding: 10px 50px;
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+.second-section {
+    display: flex;
+    margin: 200px 0;
+    height: 800px;
+    background-color: rgb(251, 252, 255);
+}
+
+.second-section-div1 {
+    width: 50%;
+    background-image: url(./images/powerbeats.png);
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+}
+
+.second-section-div2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.p-secondTitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+.p-span {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 0;
+    padding-left: 120px;
+}
+
+.p-span span {
+    font-weight: bold;
+}
+
+.p-secondContent {
+    max-width: 80%;
+    font-size: 1.45em;
+}
+
+.price-and-button {
+    display: inline-flex;
+    max-height: 50px;
+    align-items: center;
+}
+
+.price {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 0;
+    margin-right: 50px;
+}
+
+.buy {
+    background-color: rgb(255, 0, 0);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: 100;
+    padding: 10px 60px;
+    font-size: 1.3em;
+}
+
+.third-section {
+    background-color: rgb(87, 87, 87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.third-section-div {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+.third-section-div img {
+    margin-right: 30px;
+}
+
+.third-section-div p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+}
+
+.third-section-div p span {
+    font-weight: 900;
+}
+
+.third-section>p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 100px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.fourth-section {
+    display: flex;
+    height: 720px;
+    margin: 0;
+}
+
+.fourth-section-div1 {
+    background-image: url(./images/beats-girl.png);
+    width: 50%;
+    background-size: cover;
+}
+
+.fourth-section-div2 {
+    width: 25%;
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+}
+
+.big-text {
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    font-size: 8em;
+    font-weight: 900;
+    margin: 100px 0 20px 0;
+    padding-left: 100px;
+    justify-content: flex-end;
+}
+
+.red-text {
+    font-size: 3em;
+    padding-left: 110px;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.red-text span {
+    color: red;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.fourth-section-div3 {
+    background-image: url(./images/beats-red.png);
+    width: 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 2em;
+}
