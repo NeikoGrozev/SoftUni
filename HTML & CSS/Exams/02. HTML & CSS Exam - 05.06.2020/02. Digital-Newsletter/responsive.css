@@ -1,0 +1,12 @@
+@media screen and (max-width: 884px){
+    .newsletter-boxes {
+        flex-direction: column;    
+      }
+
+      .newsletter-bottom{
+        display: flex;
+      }
+      .newsletter-bottom-content{
+       text-align: start;
+      }
+}
