@@ -1,0 +1,10 @@
+.u-sticky{
+    transform: rotate(-90deg);
+    width: 100px;
+    margin: 0;
+    max-height: 18px;
+    position: sticky;
+    top: 520px;
+    left: 100%;
+    z-index: 1;
+}

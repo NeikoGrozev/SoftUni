@@ -1,0 +1,11 @@
+.o-first-footer-div{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(221, 221, 221);
+}
+
+.o-first-footer-div img{
+    width: 45%;
+}

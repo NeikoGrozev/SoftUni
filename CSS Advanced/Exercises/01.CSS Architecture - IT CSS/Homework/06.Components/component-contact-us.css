@@ -1,0 +1,15 @@
+.c-contact-us {
+    margin: 0;
+    padding: 2px 5px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(120, 130, 142);
+}
+
+.c-contact-us p {
+    margin: 0;
+}

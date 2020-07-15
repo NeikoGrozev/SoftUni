@@ -1,0 +1,61 @@
+.o-image-container {
+    padding-top: 80px;
+    position: relative;
+    width: 30%;
+    margin: 100px 20px;
+}
+
+.o-image-container .softuni-logo {
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(231, 231, 231, 0.75);
+    z-index: 1;
+}
+
+.o-image-container .software-university-logo {
+    background-color: white;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(231, 231, 231, 0.75);
+    z-index: 1;
+}
+
+.about-us-summart1 {
+    position: absolute;
+    right: 0;
+    width: 85%;
+    border-radius: 10px;
+    z-index: 0;
+    box-shadow: 0px 0px 10px 4px rgba(218, 221, 224, 1);
+}
+
+.about-us-summart2 {
+    position: absolute;
+    left: 0;
+    width: 85%;
+    border-radius: 10px;
+    z-index: 0;
+    box-shadow: 0px 0px 10px 4px rgba(218, 221, 224, 1);
+}
+
+.about-us-labs-and-projects-1{
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgba(218, 221, 224, 1);
+}
+
+.about-us-labs-and-projects-2{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 4px rgba(218, 221, 224, 1);
+}

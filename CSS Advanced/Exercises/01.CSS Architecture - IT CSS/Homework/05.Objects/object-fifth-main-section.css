@@ -1,0 +1,17 @@
+.o-fifth-main-section{
+    background-color: rgb(66, 171, 248);
+    width: 100%;
+    max-height: 250px;
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5em;
+    position: relative;
+}
+
+.o-fifth-main-section img{
+    position: absolute;
+    right: 25%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px 0px rgba(210,211,217,1);
+}

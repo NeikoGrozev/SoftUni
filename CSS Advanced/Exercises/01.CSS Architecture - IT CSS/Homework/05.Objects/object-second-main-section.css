@@ -1,0 +1,7 @@
+.o-second-main-section{
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}

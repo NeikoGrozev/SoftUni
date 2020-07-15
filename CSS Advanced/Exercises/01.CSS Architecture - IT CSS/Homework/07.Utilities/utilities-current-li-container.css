@@ -1,0 +1,13 @@
+.u-current-li-container {
+    position: relative;
+}
+
+.u-current-li-container::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(66, 171, 248);
+}

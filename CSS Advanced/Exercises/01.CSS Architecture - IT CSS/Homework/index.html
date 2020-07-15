@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./03.Generic/generic-normalize.css">
+    <link rel="stylesheet" href="./03.Generic/generic-fonts.css">
+
+    <link rel="stylesheet" href="./04.Elements/elements-body.css">
+    <link rel="stylesheet" href="./04.Elements/element-header.css">
+    <link rel="stylesheet" href="./04.Elements/element-main.css">
+    <link rel="stylesheet" href="./04.Elements/element-footer.css">
+
+    <link rel="stylesheet" href="./05.Objects/object-page-header-container.css">
+    <link rel="stylesheet" href="./05.Objects/object-page-navigation-conainer.css">
+    <link rel="stylesheet" href="./05.Objects/object-header-navigation-container.css">
+    <link rel="stylesheet" href="./05.Objects/object-horizontal-list.css">
+    <link rel="stylesheet" href="./05.Objects/object-li-container.css">
+    <link rel="stylesheet" href="./05.Objects/object-primary-nav-link.css">
+    <link rel="stylesheet" href="./05.Objects/object-header-nav.css">
+    <link rel="stylesheet" href="./05.Objects/object-page-header.css">
+    <link rel="stylesheet" href="./05.Objects/object-first-main-section.css">
+    <link rel="stylesheet" href="./05.Objects/object-main-section-text-div.css">
+    <link rel="stylesheet" href="./05.Objects/object-image-container.css">
+    <link rel="stylesheet" href="./05.Objects/object-second-main-section.css">
+    <link rel="stylesheet" href="./05.Objects/object-third-main-section.css">
+    <link rel="stylesheet" href="./05.Objects/object-fourth-main-section.css">
+    <link rel="stylesheet" href="./05.Objects/object-cards-section.css">
+    <link rel="stylesheet" href="./05.Objects/object-fifth-main-section.css">
+    <link rel="stylesheet" href="./05.Objects/object-first-footer-div.css">
+    <link rel="stylesheet" href="./05.Objects/object-navigation-footer.css">
+
+    <link rel="stylesheet" href="./06.Components/component-logo.css">
+    <link rel="stylesheet" href="./06.Components/component-card.css">
+    <link rel="stylesheet" href="./06.Components/component-icons.css">
+    <link rel="stylesheet" href="./06.Components/component-contact-us.css">
+
+    <link rel="stylesheet" href="./07.Utilities/utilities-logo-img.css">
+    <link rel="stylesheet" href="./07.Utilities/utilities-header-button.css">
+    <link rel="stylesheet" href="./07.Utilities/utilities-current-li-container.css">
+    <link rel="stylesheet" href="./07.Utilities/utilities-sticky.css">
+
+    <title>CSS Architecture – ITCSS – Lab</title>
+</head>
+
+<body>
+    <section class="o-page-header-container">
+        <header>
+            <section class="o-page-navigation-conainer">
+                <div class="c-logo">
+                    <img class="u-logo-img" src="./images/logo-header.svg" alt="SoftUni Logo">
+                </div>
+                <div class="o-header-navigation-container">
+                    <nav class="o-header-nav">
+                        <ul class="o-horizontal-list">
+                            <li class="o-li-container u-current-li-container"><a class="o-primary-nav-link"
+                                    href="">About Us</a></li>
+                            <li class="o-li-container"><a class="o-primary-nav-link" href="">Curriculum</a></li>
+                            <li class="o-li-container"><a class="o-primary-nav-link" href="">Certificates</a></li>
+                            <li class="o-li-container"><a class="o-primary-nav-link" href="">Careers</a></li>
+                            <li class="o-li-container"><a class="o-primary-nav-link" href="">Fees</a></li>
+                            <li class="o-li-container"><a class="o-primary-nav-link" href="">Blog</a></li>
+                        </ul>
+                    </nav>
+                    <button class="u-header-button">LOG IN</button>
+                </div>
+            </section>
+            <section class="o-page-header">
+                <h1>About Us</h1>
+                <p>
+                    We create real professionals in the software development industry and help them get their career
+                    started!
+                </p>
+                <p>
+                    SoftUni (Software University) is based on the idea of an innovative and modern educational center
+                    that creates real professionals in the world of programming. For us, as well as for the entire
+                    software industry, most important are the real practical skills.
+                </p>
+                <p>
+                    Become a software developer, enroll in our end-to-end program today! Start now with a free course.
+                </p>
+
+                <section>
+                    <div>
+                        <button class="header-first-botton">APPLY</button>
+                    </div>
+                    <div>
+                        <button class="header-second-botton">CURRICULUM</button>
+                    </div>
+                </section>
+            </section>
+        </header>
+        <div class="u-sticky">
+            <div class="c-contact-us">
+                <i class="fa fa-info-circle"></i>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="o-first-main-section">
+            <div class="o-main-section-text-div">
+                <h2>SoftUni and "Software University"</h2>
+                <p>
+                    SoftUni is one of the largest and most respected educational institutions, creating professionals in
+                    the fields of software engineering, digital marketing and design. Today SoftUni works directly with
+                    more than 70 IT companies and has an active community of 150 000 students.
+                </p>
+                <p>
+                    Founded in 2013, with its unique concept and innovative educational methodology, SoftUni is rapidly
+                    becoming a market leader and today organizes hundreds of training programs, free courses and
+                    webinars, events and other educational initiatives that provide quality education to thousands of
+                    young people in the field of IT and digital technologies.
+                </p>
+                <p>
+                    With its foundation in 2013, SoftUni starts its first and most successful project - the "Software
+                    University" - a unique educational initiative which creates high-quality software engineers from
+                    scratch, achieving incredible success rate - 97% of all graduates successfully start their career as
+                    software engineers.
+                </p>
+                <p>
+                    "Software University" is a project of SoftUni and is not among the state recognized universities,
+                    because the purpose of "Software University" is to be their alternative, providing their students
+                    with everything they need to start their career!
+                </p>
+            </div>
+            <div class="o-image-container">
+                <img class="softuni-logo" src="./images/softuni-logo.png" alt="SoftUni logo">
+                <img class="about-us-summart1" src="./images/about-us-summary-1.jpg"
+                    alt="Software University's full training hall">
+            </div>
+            <div class="o-image-container">
+                <img class="software-university-logo" src="./images/software-university-logo.png"
+                    alt="Software University logo">
+                <img class="about-us-summart2" src="./images/about-us-summary-2.jpg"
+                    alt="Nakov with a graduate student">
+            </div>
+        </section>
+        <section class="o-second-main-section">
+            <div class="o-main-section-text-div">
+                <h2>Laboratory Exercises and Projects</h2>
+                <p>
+                    Our unparalleled live education program aims to teach you to code, thanks to its well-structured
+                    courses, practical exercises, experienced industry leading trainers and interactive platform. Every
+                    lesson is divided into different sections so you can learn step-by-step and exercise.
+                </p>
+                <p>
+                    The practical training is combined with various lab exercises, as well as individual and group
+                    projects through which the students will acquire both the technical and personal skills that they
+                    will need in their future work as professionals. Moreover, you can rely on the trainers who will
+                    assist you online if you need any support.
+                </p>
+            </div>
+            <div class="o-image-container">
+                <img class="about-us-labs-and-projects-1" src="./images/about-us-labs-and-projects-1.jpg"
+                    alt="Labs and projects">
+            </div>
+            <div class="o-image-container">
+                <img class="about-us-labs-and-projects-2" src="./images/about-us-labs-and-projects-2.jpg"
+                    alt="Labs and projects">
+            </div>
+        </section>
+        <section class="o-third-main-section">
+            <h2>Our vision</h2>
+            <p>
+                Our vision is to be a main driver of the global digital revolution and contribute to building a new
+                digital era.
+            </p>
+
+            <h2>Our mission</h2>
+            <p>
+                Our mission is to build a global organization, which provides practical, quality and accessible
+                education in the field of digital and information technologies, creating real professionals and future
+                leaders.
+            </p>
+        </section>
+        <section class="o-fourth-main-section">
+            <h2>Our top instructors</h2>
+            <p>
+                The high quality of education is guaranteed by the carefully selected teaching staff. It consists of
+                software industry practitioners who have great lecturing and mentoring skills and who apply the
+                industry’s best practices in teaching. Classes often feature prominent guest lecturers who pass on their
+                experience and knowledge to students.
+            </p>
+            <section class="o-cards-section">
+                <div class="card">
+                    <img src="./images/about-us-top-instructors-nakov.jpg" alt="">
+                    <p>Svetlin Nakov</p>
+                    <p>Technical trainer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/about-us-top-instructors-kenov.jpg" alt="">
+                    <p>Ivaylo Kenov</p>
+                    <p>Technical trainer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/about-us-top-instructors-kostov.jpg" alt="">
+                    <p>Nikolay Kostov</p>
+                    <p>Technical trainer</p>
+                </div>
+                <div class="card">
+                    <img src="./images/about-us-top-instructors-kolev.jpg" alt="">
+                    <p>Pavel Kolev</p>
+                    <p>Technical trainer</p>
+                </div>
+            </section>
+        </section>
+        <section class="o-fifth-main-section">
+            <h2>Scholarship</h2>
+            <p>
+                SoftUni (Software University) offers a range of different scholarship programmes for students to help
+                cover tuition fees. The exact amounts of the scholarships may vary. All our top students have the
+                opportunity to apply for a scholarship that will cover their education.
+            </p>
+            <img src="./images/woman-teaching-medium.jpg" alt="Woman Teaching">
+        </section>
+    </main>
+
+    <footer>
+        <div class="o-first-footer-div">
+            <img src="./images/logo.svg" alt="Logo">
+            <p>2020 - Software University LTD</p>
+        </div>
+        <nav class="o-navigation-footer">
+            <ul>
+                <li><a href="">Curriculum</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Webinars</a></li>
+                <li><a href="">SoftUni Romania</a></li>
+                <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+                <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+
+    </footer>
+</body>
+
+</html>

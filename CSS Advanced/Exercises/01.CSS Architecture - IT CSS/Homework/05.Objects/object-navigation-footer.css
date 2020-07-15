@@ -1,0 +1,22 @@
+.o-navigation-footer{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 55%;
+    height: 120px;
+}
+.o-navigation-footer ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: flex-end;
+
+}
+
+.o-navigation-footer a{
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0 5px;
+    color: rgb(62, 76, 93);
+}

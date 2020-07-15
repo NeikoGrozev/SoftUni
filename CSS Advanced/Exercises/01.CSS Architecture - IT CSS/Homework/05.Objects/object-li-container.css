@@ -1,0 +1,6 @@
+.o-li-container{
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
