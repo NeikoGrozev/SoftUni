@@ -1,0 +1,49 @@
+.navbar {
+  margin: 0 75px;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.navbar__logo :first-child {
+  margin-right: 16px;
+}
+
+.navbar__logo :first-child:hover {
+  transform: rotate(90deg);
+}
+
+.navbar__logo :last-child {
+  width: 122px;
+  height: 42px;
+  margin: 16px 0;
+}
+
+.navbar__items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.navbar__item {
+  list-style: none;
+  margin: 15px;
+}
+
+.navbar__item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #565656;
+  font-weight: bold;
+}
+
+.navbar__item a:hover {
+  cursor: pointer;
+  color: #FF9100;
+}
