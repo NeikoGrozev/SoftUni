@@ -1,0 +1,67 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+ul li {
+  padding-top: 10px;
+  font-weight: 500;
+  animation: hiddenText ease-out 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+ul li i {
+  width: 15px;
+}
+
+ul li span {
+  margin-left: 20px;
+}
+
+ul li:nth-child(1) {
+  animation-delay: 1.5s;
+}
+
+ul li:nth-child(2) {
+  animation-delay: 2.5s;
+}
+
+ul li:nth-child(3) {
+  animation-delay: 3.5s;
+}
+
+ul li:nth-child(4) {
+  animation-delay: 4.5s;
+}
+
+ul li:nth-child(5) {
+  animation-delay: 5.5s;
+}
+
+ul li:nth-child(6) {
+  animation-delay: 6.5s;
+}
+
+ul li:nth-child(7) {
+  animation-delay: 7.5s;
+}
+
+@keyframes hiddenText {
+  0% {
+    transform: translate(-100px, -20px);
+  }
+  100% {
+    opacity: 1;
+  }
+}

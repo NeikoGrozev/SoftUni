@@ -1,0 +1,31 @@
+.navbar {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.14);
+
+    .navbar__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .navbar__items {
+            display: flex;
+
+            .navbar__item {
+                list-style: none;
+                margin: 15px;
+
+
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #565656;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #FF9100;
+    
+                    }
+                }
+            }
+        }
+    }
+}

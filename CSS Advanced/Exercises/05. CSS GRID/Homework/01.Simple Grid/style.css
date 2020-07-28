@@ -1,0 +1,17 @@
+.container {
+    margin: 0;
+    min-width: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px 30px;
+}

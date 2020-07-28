@@ -1,0 +1,18 @@
+@import url("./Style/Settings/settings-colors.css");
+@import url("./Style/Settings/settings-typography.css");
+
+@import url("./Style/Elements/element-body.css");
+@import url("./Style/Elements/elements-input-fields.css");
+
+@import url("./Style/Objects/objects-containers.css");
+
+@import url("./Style/Components/components-header.css");
+@import url("./Style/Components/components-navigation.css");
+@import url("./Style/Components/components-button.css");
+@import url("./Style/Components/components-filter.css");
+@import url("./Style/Components/components-card.css");
+@import url("./Style/Components/components-circles.css");
+@import url("./Style/Components/programs-wrapper.css");
+@import url("./Style/Components/component-footer.css");
+
+@import url("./Style/Utilities/utilities-centered.css");

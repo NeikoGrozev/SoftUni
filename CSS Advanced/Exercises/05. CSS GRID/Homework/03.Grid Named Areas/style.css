@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-columns: 1fr 500px;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-gap: 20px;
+    padding: 40px;
+}
+
+.box {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}

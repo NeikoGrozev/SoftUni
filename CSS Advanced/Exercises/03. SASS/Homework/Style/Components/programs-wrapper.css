@@ -1,0 +1,89 @@
+@import url("../Settings/settings-colors.scss");
+.programs-wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.programs-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+}
+
+.programs-info .program-info__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #41BEAD;
+}
+
+.programs-info p {
+  text-align: center;
+}
+
+.program-cards-wrapper {
+  display: flex;
+  width: 90%;
+  margin: 40px 0 60px 0;
+}
+
+.program-cards-wrapper .program-card {
+  width: 629px;
+  height: 259px;
+  border-radius: 12px;
+  margin: 0 15px;
+}
+
+.program-cards-wrapper .program-card .program-card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.program-cards-wrapper .program-card .prorgam-card__info {
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.program-cards-wrapper .program-card .program-card__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.computer-icon {
+  width: 46px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.settings-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+
+.program-card--blue {
+  border: 4px solid #44A9F8;
+  background: #E3F3FD;
+}
+
+.program-card--blue .program-card__title {
+  color: #44A9F8;
+}
+
+.program-card--green {
+  border: 4px solid #00AF9B;
+  background: #DFF4F1;
+}
+
+.program-card--green .program-card__title {
+  color: #00AF9B;
+}

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SASS</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__wrapper container">
+                <article class="navbar__logo">
+                    <img src="./Assets/images/logo.png" alt="Logo">
+                </article>
+                <ul class="navbar__items">
+                    <li class="navbar__item">
+                        <a href="#">обучения</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">Събития</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">Преподаватели</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">Блог</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">Контакти</a>
+                    </li>
+                    <li class="navbar__item">
+                        <img src="./Assets/icons/search.png" alt="Search">
+                    </li>
+                    <button class="btn btn--secondary">
+                        вход
+                    </button>
+                </ul>
+            </div>
+        </nav>
+        <section class="header__info">
+            <article class="centered centered__container">
+                <h1>Обучения</h1>
+                <p>At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a suscipit
+                    cras
+                    sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus commodo
+                    at.
+                    Augue ullamcorper suspendisse. Sit morbi risus</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="main">
+        <section class="filter--wrapper">
+            <div class="filter container">
+                <h4 class="filter__title">
+                    Филтър:
+                </h4>
+                <label class="filter__label filter__label--level">
+                    <img class="filter__label__img" src="./Assets/Icons/level.png">
+                    <select name="level" id="level">
+                        <option value="level">Ниво</option>
+                        <option value="basic">Начинаещ</option>
+                        <option value="advanced">Напреднал</option>
+                    </select>
+                    <img class="filter__label__img filter__label__img--info" src="./Assets/Icons/info.png">
+                </label>
+                <label class="filter__label">
+                    <img class="filter__label__img" src="./Assets/Icons/location.png">
+                    <select name="location" id="location">
+                        <option value="level">Локация</option>
+                        <option value="basic">София</option>
+                        <option value="advanced">Онлайн</option>
+                    </select>
+                </label>
+                <label class="filter__label">
+                    <img class="filter__label__img" src="./Assets/Icons/people.png">
+                    <select name="suitable-for" id="suitable-for">
+                        <option value="suitable-for">Подходящ за</option>
+                        <option value="basic">Начинаещ</option>
+                        <option value="advanced">Напреднал</option>
+                    </select>
+                </label>
+                <label class="filter__label">
+                    <img class="filter__label__img" src="./Assets/Icons/puzzle.png">
+                    <select name="type" id="type">
+                        <option value="type">Вид</option>
+                        <option value="online">Онлайн</option>
+                        <option value="onsite">Присъствено</option>
+                    </select>
+                </label>
+        </section>
+        <section class="cards--wrapper">
+            <div class="cards container">
+                <article class="card">
+                    <header class="card__header card__header--blue">
+                        <div class="card__label card__label--gray">
+                            Начинаещ
+                        </div>
+                        <h3 class="card__title">
+                            Първи стъпки в програмирането
+                        </h3>
+                    </header>
+                    <div class="card__content">
+                        <div class="card__info">
+                            <img src="./Assets/Icons/play.png">
+                            16 май 2020
+                        </div>
+                        <div class="card__info">
+                            <img src="./Assets/Icons/time.png">
+                            4 седмици
+                        </div>
+                        <div class="card__info">
+                            <img src="./Assets/Icons/user.png">
+                            1-3 клас
+                        </div>
+                        <div class="card__info">
+                            <img src="./Assets/Icons/location-icon.png">
+                            София - жк. Изток
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="card__price">
+                            110 лв.
+                        </span>
+                        <button class="btn btn--secondary">
+                            към обучението
+                        </button>
+                    </div>
+                </article>
+                <article class="card">
+                    <header class="card__header card__header--green">
+                        <div class="card__label card__label--gray">
+                            Начинаещ
+                        </div>
+                        <h3 class="card__title">
+                            Първи стъпки в програмирането
+                        </h3>
+                    </header>
+                    <div class="card__content">
+                        <div class="card__info">
+                            <img src="./Assets/Icons/time.png">
+                            4 седмици
+                        </div>
+                        <div class="card__info">
+                            <img src="./Assets/Icons/user.png">
+                            2-3 клас
+                        </div>
+                        <div class="card__info">
+                            <img src="./Assets/Icons/location-icon.png">
+                            Онлайн 
+                        </div>
+                    </div>
+                    <div class="card__footer">
+                        <span class="card__price">
+                            110 лв.
+                        </span>
+                        <button class="btn btn--secondary">
+                            към обучението
+                        </button>
+                    </div>
+                </article>
+                <article class="card">
+                    <header class="card__header card__header--blue">
+                        <div class="card__label card__label--violet">
+                            Начинаещ
+                        </div>
+                        <h3 class="card__title">
+                            Първи стъпки в програмирането
+                        </h3>
+                    </header>
+                    <div class="card__content card__content--grey">
+                        <div class="card__info">
+                            <img src="./Assets/Icons/time.png">
+                            4 седмици
+                        </div>
+                        <div class="card__info">
+                            <img src="./Assets/Icons/user.png">
+                            1-3 клас
+                        </div>
+                        <div class="card__info card__info--full">
+                            <img src="./Assets/Icons/location-icon.png">
+                            гр. София, SoftUni - жк. Изток
+                        </div>
+                    </div>
+                    <div class="card__footer card__footer--grey">
+                        <span class="card__price">
+                            110 лв.
+                        </span>
+                        <button class="btn btn--secondary">
+                            към обучението
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        </div>
+        <section class="circles--wrapper">
+            <img src="./Assets/Images/group-circles.png">
+        </section>
+        <section class="programs-wrapper">
+            <section class="programs-info">
+                <h1 class="program-info__title">Учебни програми</h1>
+                <p>
+                    At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a suscipit
+                    cras
+                    sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus commodo
+                    at.
+                </p>
+            </section>
+            <section class="program-cards-wrapper">
+                <article class="program-card program-card--blue">
+                    <div class="program-card__header">
+                        <img class="computer-icon" src="./Assets/Icons/computer.png">
+                        <h3 class="program-card__title">Софтуерна програма</h3>
+                    </div>
+                    <div class="prorgam-card__info">
+                        <p>
+                            At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                            suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                            porta tellus commodo at.
+                        </p>
+                    </div>
+                    <div class="program-card__footer">
+                        <button class="btn btn--secondary">виж софтуерна програма</button>
+                    </div>
+                </article>
+                <article class="program-card program-card--green">
+                    <div class="program-card__header">
+                        <img class="settings-icon" src="./Assets/Icons/settings.png">
+                        <h3 class="program-card__title">Хардуерна програма</h3>
+                    </div>
+                    <div class="prorgam-card__info">
+                        <p>
+                            At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                            suscipit cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan,
+                            porta tellus commodo at.
+                        </p>
+                    </div>
+                    <div class="program-card__footer">
+                        <button class="btn btn--secondary">виж хардуерна програма</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer-wrapper">
+            <img class="paited-man-image" src="./Assets/Images/painted-man.png" alt="">
+            <ul class="footer-row-container">
+                <li class="footer-block">
+                    <ul class="footer-column-container">
+                        <li>
+                            <h5 class="footer--title">Softuni Kids</h5>
+                        </li>
+                        <li>
+                            <a href="">Начало</a>
+                        </li>
+                        <li>
+                            <a href="">Летни академии</a>
+                        </li>
+                        <li>
+                            <a href="">Преподаватели</a>
+                        </li>
+                        <li>
+                            <a href="">Блог</a>
+                        </li>
+                        <li>
+                            <a href="">Контакти</a>
+                        </li>
+                        <li>
+                            <a href="">Общи условия</a>
+                        </li>
+                        <li>
+                            <a href="">Лични данни</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-block">
+                    <ul class="footer-column-container">
+                        <li>
+                            <h5 class="footer--title">Всички обучения</h5>
+                        </li>
+                        <li>
+                            <a href="">Курсове</a>
+                        </li>
+                        <li>
+                            <a href="">Събития</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-block">
+                    <ul class="footer-column-container">
+                        <li>
+                            <h5 class="footer--title">Всички инициативи</h5>
+                        </li>
+                        <li>
+                            <a href="">Software University</a>
+                        </li>
+                        <li>
+                            <a href="">SoftUni Digital</a>
+                        </li>
+                        <li>
+                            <a href="">SoftUni Creative</a>
+                        </li>
+                        <li>
+                            <a href="">SoftUni Foundation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="footer-block">
+                    <h5 class="footer--title">Намери ни</h5>
+                    <div class="footer-icon-container">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div>
+                        <p>© 2016-2020 - SoftUni Kids.</p>
+                        <p>All Rights Reserved.</p>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+    </footer>
+</body>
+
+</html>

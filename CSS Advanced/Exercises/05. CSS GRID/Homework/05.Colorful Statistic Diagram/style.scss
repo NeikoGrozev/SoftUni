@@ -1,0 +1,49 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0 200px;
+    align-items: end;
+    align-content: center;
+}
+
+.box {
+    font-size: 18px;
+    padding: 5px 5px;
+}
+
+.a {
+    background-color: rgb(127, 255, 212);
+    height: 30px;
+}
+
+.b {
+    background-color: rgb(255, 255, 0);
+    height: 150px;
+}
+
+.c {
+    background-color: rgb(255, 192, 203);
+    height: 90px;
+}
+
+.d {
+    background-color: rgb(98, 227, 231);
+    height: 220px;
+}
+
+.e {
+    background-color: rgb(203, 243, 130);
+    height: 300px;
+}
+
+.f {
+    background-color: rgb(119, 24, 207);
+    height: 260px;
+}
+
+.g {
+    background-color: rgb(247, 141, 21);
+    height: 25px;
+}

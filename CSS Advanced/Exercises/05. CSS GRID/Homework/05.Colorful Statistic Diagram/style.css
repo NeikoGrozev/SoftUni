@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 200px;
+  align-items: end;
+  align-content: center;
+}
+
+.box {
+  font-size: 18px;
+  padding: 5px 5px;
+}
+
+.a {
+  background-color: aquamarine;
+  height: 30px;
+}
+
+.b {
+  background-color: yellow;
+  height: 150px;
+}
+
+.c {
+  background-color: pink;
+  height: 90px;
+}
+
+.d {
+  background-color: #62e3e7;
+  height: 220px;
+}
+
+.e {
+  background-color: #cbf382;
+  height: 300px;
+}
+
+.f {
+  background-color: #7718cf;
+  height: 260px;
+}
+
+.g {
+  background-color: #f78d15;
+  height: 25px;
+}
