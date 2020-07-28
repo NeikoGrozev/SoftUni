@@ -16,3 +16,9 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
 }
+
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}

@@ -1,0 +1,114 @@
+footer,
+.footer {
+  display: grid;
+  grid-template-columns: 375px 350px 240px 270px 240px;
+  background-color: #565656;
+  height: 312px;
+  margin-top: 78px;
+  border-top: 12px solid #919191;
+}
+
+footer__container,
+.footer__container {
+  margin: 58px 0;
+}
+
+footer__container--relative,
+.footer__container--relative {
+  position: relative;
+}
+
+footer__container--logo,
+.footer__container--logo {
+  width: 202px;
+  height: 403px;
+  position: absolute;
+  top: -103px;
+  left: 75px;
+}
+
+footer__container--title,
+.footer__container--title {
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+footer .footer__nav,
+.footer .footer__nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  max-height: 152px;
+}
+
+footer .footer__nav--item,
+.footer .footer__nav--item {
+  margin: 6px 0;
+}
+
+footer .footer__nav a,
+.footer .footer__nav a {
+  text-decoration: none;
+  color: #E6E6E6;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+footer .footer__nav a:hover,
+.footer .footer__nav a:hover {
+  color: #41BEAD;
+}
+
+footer .footer__nav--icons,
+.footer .footer__nav--icons {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer__nav--icons,
+.footer .footer__nav--icons {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+footer .footer__nav--icons__item,
+.footer .footer__nav--icons__item {
+  margin-right: 20px;
+}
+
+footer .footer__nav--icons__item a,
+.footer .footer__nav--icons__item a {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  color: #E6E6E6;
+}
+
+footer .footer__nav--icons__item a i,
+.footer .footer__nav--icons__item a i {
+  font-size: 30px;
+}
+
+footer .footer__nav--icons__item a:hover,
+.footer .footer__nav--icons__item a:hover {
+  color: #41BEAD;
+}
+
+footer .footer__copyright,
+.footer .footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+  max-width: 180px;
+}
