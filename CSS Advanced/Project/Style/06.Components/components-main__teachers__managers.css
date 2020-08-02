@@ -1,0 +1,28 @@
+.main__teachers__managers {
+  display: grid;
+}
+
+.main__teachers__managers__container {
+  display: grid;
+  grid-template-columns: 220px 441px 220px auto;
+  padding-top: 96px;
+  border-bottom: 10px dotted #DFF4F1;
+}
+
+.main__teachers__managers__container .manager-name {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #41BEAD;
+}
+
+.main__teachers__managers__container .manager-position {
+  margin: 0;
+  font-size: 14px;
+  color: #B2B2B2;
+}
+
+.main__teachers__managers__container .manager-info {
+  max-width: 409px;
+  margin-top: 24px;
+  color: #565656;
+}

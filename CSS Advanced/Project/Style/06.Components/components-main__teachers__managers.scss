@@ -1,0 +1,30 @@
+@import "../01.Setting/settings-colors.scss";
+
+.main__teachers__managers {
+    display: grid;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 220px 441px 220px auto;
+        padding-top: 96px;
+        border-bottom: 10px dotted $primary--50;
+
+        .manager-name {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: $primary--300;
+        }
+
+        .manager-position {
+            margin: 0;
+            font-size: 14px;
+            color: $grey--400;
+        }
+
+        .manager-info {
+            max-width: 409px;
+            margin-top: 24px;
+            color: $grey--700;
+        }
+    }
+}

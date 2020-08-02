@@ -1,0 +1,52 @@
+@import "../01.Setting/settings-colors.scss";
+
+.main__teachers__candidate-form {
+    display: grid;
+    background-color: $blue--300;
+    border-top: 12px solid $blue--200;
+
+    .candidate-form-and-information {
+        display: grid;
+        grid-template-rows: 156px 74px;
+        grid-template-columns: 260px 260px 260px 156px;
+        margin-top: 64px;
+
+        &__main {
+            grid-column: 1 / span all;
+            width: 850px;
+            text-align: center;
+            justify-self: center;
+            color: $white;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        input {
+            width: 228px;
+            height: 52px;
+            border-radius: 6px;
+            border: 1px solid #ffffff;
+            background-color: $blue--300;
+            padding: 16px;
+        }
+
+        ::placeholder {
+            color: $white;
+        }
+
+        &__button{
+            justify-self: end;
+        }
+
+        button{
+            padding: 14px 32px;
+        }
+    }
+}

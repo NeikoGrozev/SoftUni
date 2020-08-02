@@ -1,0 +1,55 @@
+.main__cours__program {
+    display: grid;
+    padding: 65px 0;
+    background-image: url("../../Repository/Images/main_program-background.png");
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 60px 676px 1fr;
+
+        h2 {
+            margin-top: 0;
+        }
+
+        h5 {
+            margin-bottom: 0;
+        }
+
+        select {
+            width: 100%;
+            padding: 12px 60px 12px 14px;
+            margin: 8px auto;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $grey--700;
+            appearance: none;
+            position: relative;
+        }
+
+        .select-section::after {
+            content: "";
+            background: url("../../Repository/Icons/arrow_down.png") center no-repeat;
+            width: 12px;
+            height: 8px;
+            display: inline-block;
+            position: absolute;
+            right: 25px;
+            top: 28px;
+        }
+
+        option {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: $grey--700;
+        }
+
+        .program__image {
+            position: relative;
+            bottom: -185px;
+            right: -160px;
+        }
+    }
+}

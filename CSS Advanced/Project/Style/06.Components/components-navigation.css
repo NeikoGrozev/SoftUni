@@ -1,7 +1,6 @@
 .navbar {
-  padding: 0 75px;
   display: grid;
-  grid-template-columns: 200px auto;
+  grid-template-columns: 200px auto 82px;
 }
 
 .navbar__logo {
@@ -33,17 +32,23 @@
 
 .navbar__item {
   list-style: none;
-  margin: 15px;
+  margin: 15px 24px;
 }
 
 .navbar__item a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #565656;
   font-weight: bold;
+  line-height: 16px;
+  color: #565656;
 }
 
 .navbar__item a:hover {
   cursor: pointer;
-  color: #FF9100;
+  color: #ff9100;
+}
+
+.navbar__button {
+  display: flex;
+  align-items: center;
 }

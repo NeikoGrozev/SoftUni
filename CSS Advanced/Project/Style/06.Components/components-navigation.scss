@@ -1,7 +1,8 @@
+@import "../01.Setting/settings-colors.scss";
+
 .navbar {
-    padding: 0 75px;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 200px auto 82px;
 
     &__logo {
         display: flex;
@@ -23,28 +24,33 @@
         }
     }
 
-    &__items{
+    &__items {
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-end;
-        list-style: none;        
+        list-style: none;
     }
 
-    &__item{
+    &__item {
         list-style: none;
-        margin: 15px;
+        margin: 15px 24px;
 
-        a{
+        a {
             text-decoration: none;
             text-transform: uppercase;
-            color: #565656;
             font-weight: bold;
+            line-height: 16px;
+            color: $grey--700;
         }
-        
+
         a:hover {
             cursor: pointer;
-            color: #FF9100;
+            color: #ff9100;
         }
     }
-    
+
+    &__button{
+        display: flex;
+        align-items: center;
+    }
 }

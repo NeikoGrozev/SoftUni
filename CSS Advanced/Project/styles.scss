@@ -6,7 +6,23 @@
 
 @import "./Style/04.Elements/elements-body.scss";
 
+@import "./Style/05.Objects/objects-wrapper.scss";
+
 @import "./Style/06.Components/components-header.scss";
 @import "./Style/06.Components/components-navigation.scss";
 @import "./Style/06.Components/components-button.scss";
+@import "./Style/06.Components/components-main.scss";
+@import "./Style/06.Components/components-main__course__firts-step.scss";
+@import "./Style/06.Components/components-label.scss";
+@import "./Style/06.Components/components-main__course__information.scss";
+@import "./Style/06.Components/components-main__course__program.scss";
+@import "./Style/06.Components/components-main__course__more-information.scss";
+@import "./Style/06.Components/components-main__teachers__title.scss";
+@import "./Style/06.Components/components-main__teachers__managers.scss";
+@import "./Style/06.Components/components-main__teachers__all.scss";
+@import "./Style/06.Components/components-main__teachers__candidate-form.scss";
+@import "./Style/06.Components/components-main__contact__map.scss";
 @import "./Style/06.Components/components-footer.scss";
+
+@import "./Style/07.Utilities/utilities-centered.scss";
+@import "./Style/07.Utilities/utilities-position.scss";

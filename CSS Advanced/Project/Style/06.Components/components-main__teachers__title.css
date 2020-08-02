@@ -1,0 +1,18 @@
+.main__teachers__title {
+  background-color: #FFB402;
+  color: #FFFFFF;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.main__teachers__title h1 {
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.main__teachers__title p {
+  max-width: 850px;
+  margin: 0;
+}
