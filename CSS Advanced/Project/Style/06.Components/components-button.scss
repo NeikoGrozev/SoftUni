@@ -9,6 +9,12 @@
     text-transform: uppercase;
     font-weight: 800;
 
+    &__white{
+        background-color: $white;
+        color: $secondary--800;
+        border: 1px solid $secondary--800;
+    }
+
     &__secondary--800 {
         background-color: $secondary--800;
         color: $white;

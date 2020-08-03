@@ -1,11 +1,13 @@
+@import "../01.Setting/settings-colors.scss";
+
 .main__cours__program {
     display: grid;
     padding: 65px 0;
     background-image: url("../../Repository/Images/main_program-background.png");
 
-    &__grid {
+    &__container {
         display: grid;
-        grid-template-columns: 60px 676px 1fr;
+        grid-template-columns: 60px 675px 1fr;
 
         h2 {
             margin-top: 0;
@@ -44,12 +46,21 @@
             font-size: 18px;
             line-height: 22px;
             color: $grey--700;
+            background-color: $white;
         }
+    }
 
-        .program__image {
-            position: relative;
-            bottom: -185px;
-            right: -160px;
-        }
+    &__icon-book {
+        grid-column: 1 / 2;
+    }
+
+    &__education {
+        grid-column: 2 / 3;
+    }
+
+    &__image {
+        position: relative;
+        bottom: -184px;
+        left: 137px;
     }
 }

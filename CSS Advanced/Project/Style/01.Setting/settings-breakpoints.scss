@@ -1,4 +1,4 @@
-@mixin phone-only {
+@mixin phone {
     @media (max-width: 375px) {
         @content;
     }

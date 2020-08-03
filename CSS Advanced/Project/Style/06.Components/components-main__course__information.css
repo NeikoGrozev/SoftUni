@@ -1,73 +1,66 @@
 .main__course__information {
   display: grid;
-  grid-template-rows: 321px 1fr;
-  grid-gap: 40px;
-  margin-top: 127px;
 }
 
-.main__course__information .main-content {
+.main__course__information__container {
+  height: 587px;
+  margin-top: 136px;
   display: grid;
-  grid-template-columns: 739px 1fr;
+  grid-template-rows: 387px 32px auto;
+  grid-template-columns: 64px 488px 99px 89px 64px 488px auto;
 }
 
-.main__course__information .main-content p {
-  margin: 15px 0;
+.main__course__information__container__text {
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
 }
 
-.main__course__information .main-content__video-section {
-  justify-self: end;
-  align-self: center;
+.main__course__information__container__video-section {
+  grid-row: 1 / 2;
+  grid-column: 6 / -1;
 }
 
-.main__course__information .main-content .video-section__image {
-  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.14)), drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.12)), drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
-  border-radius: 12px;
-}
-
-.main__course__information .main-content .video-section__button {
+.main__course__information__container .video-section__image {
+  width: 440px;
+  height: 248px;
   position: absolute;
-  top: 95px;
+  top: 36px;
+  right: 0;
+}
+
+.main__course__information__container .video-section__button {
+  position: absolute;
+  top: 135px;
   right: 190px;
 }
 
-.main__course__information .other-info {
-  display: grid;
-  grid-template-columns: 50% 20px 50%;
+.main__course__information__container__icon-people {
+  grid-row: 3 / 4;
+  grid-column: 1 /2;
 }
 
-.main__course__information .other-info__column {
-  display: grid;
-  grid-template-columns: 60px 1fr;
+.main__course__information__container h2 {
+  margin-top: 0;
 }
 
-.main__course__information .other-info__column--rigth {
-  margin-left: 80px;
+.main__course__information__container__down-left-text {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
 }
 
-.main__course__information .other-info h2 {
-  margin: 32px 0;
-}
-
-.main__course__information .other-info .icon-people {
-  position: relative;
-  top: 38px;
-  margin-right: 10px;
-}
-
-.main__course__information .other-info .border-dotted {
-  display: grid;
-  grid-template-rows: 40px 1fr;
-  grid-template-columns: 1fr 1fr;
-}
-
-.main__course__information .other-info .border-dotted__current {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
+.main__course__information__container__border-dotted {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
   border-right: 10px dotted #FFECB3;
   transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.main__course__information .other-info .left-section__grid,
-.main__course__information .other-info .right-section__grid {
-  max-width: 90%;
+.main__course__information__container__icon-pizzle {
+  grid-row: 2 / 3;
+  grid-column: 5 / 6;
+}
+
+.main__course__information__container__down-right-text {
+  grid-row: 3 / 4;
+  grid-column: 6 / 7;
 }

@@ -3,3 +3,62 @@
   background-size: cover;
   z-index: -1;
 }
+
+.main__contact__map .map-info {
+  width: 519px;
+  height: 382px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: absolute;
+  bottom: -84px;
+  left: 75px;
+  padding: 32px;
+  display: grid;
+  grid-template-rows: 150px 116px auto;
+  grid-template-columns: 240px auto;
+  color: #565656;
+}
+
+.main__contact__map .map-info h4 {
+  margin-top: 0;
+  margin-bottom: 18px;
+  color: #41BEAD;
+}
+
+.main__contact__map .map-info__address p {
+  width: 216px;
+}
+
+.main__contact__map .map-info__work-time div {
+  display: grid;
+  grid-template-columns: 112px auto;
+}
+
+.main__contact__map .map-info__work-time div p {
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.main__contact__map .map-info .text-secondary {
+  color: #FF9100;
+}
+
+.main__contact__map .map-info__contact p {
+  margin-top: 0;
+}
+
+.main__contact__map .map-info__contact--phone {
+  margin-bottom: 12px;
+}
+
+.main__contact__map .map-info__contact--email {
+  margin-bottom: 24px;
+}
+
+.main__contact__map .map-info__button {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+  align-self: center;
+  justify-self: center;
+}

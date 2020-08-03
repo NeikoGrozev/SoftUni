@@ -8,6 +8,12 @@
   font-weight: 800;
 }
 
+.btn__white {
+  background-color: #FFFFFF;
+  color: #FF9100;
+  border: 1px solid #FF9100;
+}
+
 .btn__secondary--800 {
   background-color: #FF9100;
   color: #FFFFFF;
