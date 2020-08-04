@@ -1,14 +1,18 @@
 .main__course {
     display: grid;
-    grid-template-rows: 302px 800px 560px 903px;       
+    grid-template-rows: 302px 800px 560px 903px;
+
+    @include phone {
+        grid-template-rows: 302px 1945px 760px 1201px;
+    }
 }
 
-.main__teachers{
+.main__teachers {
     display: grid;
     grid-template-rows: 256px 558px 1472px 412px;
 }
 
-.main__contact{
+.main__contact {
     display: grid;
     grid-template-rows: 426px 686px 572px;
 }

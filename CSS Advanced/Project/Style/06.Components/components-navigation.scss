@@ -29,6 +29,10 @@
         flex-flow: row wrap;
         justify-content: flex-end;
         list-style: none;
+        
+        @include phone{
+            display: none;
+        }
     }
 
     &__item {
@@ -49,7 +53,7 @@
         }
     }
 
-    &__button{
+    &__button {
         display: flex;
         align-items: center;
     }

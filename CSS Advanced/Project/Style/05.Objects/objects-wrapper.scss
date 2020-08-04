@@ -1,6 +1,10 @@
 .wrapper{
     width: 1290px;
 
+    @include phone{
+        width: 335px;
+    }
+
     &__candidate-form{
         width: 936px;
     }
