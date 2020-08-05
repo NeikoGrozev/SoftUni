@@ -2,16 +2,16 @@
   z-index: -1;
   background-color: #44A9F8;
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 86px 1fr;
 }
 
 .main__course_firts-step .label {
   justify-self: center;
-  margin-top: 68px;
+  align-self: end;
 }
 
-.main__course_firts-step h1 {
-  margin-top: 10px;
+.main__course_firts-step h2 {
+  margin-top: 24px;
   max-width: 650px;
   color: #FFFFFF;
 }

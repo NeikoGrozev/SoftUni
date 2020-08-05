@@ -4,23 +4,55 @@
     display: grid;
     grid-template-columns: 200px auto 82px;
 
+    @include phone{
+        grid-template-columns: 200px auto auto;
+    }
+
     &__logo {
         display: flex;
         justify-content: start;
         align-items: center;
 
-        :first-child {
-            margin-right: 16px;
-        }
-
-        :first-child:hover {
-            transform: rotate(90deg);
-        }
-
-        :last-child {
+        &--horizontal {
             width: 122px;
             height: 42px;
             margin: 16px 0;
+
+            @include phone {
+                display: none;
+            }
+        }
+
+        &--vertical {
+            display: none;
+
+            @include phone {
+                display: inline-block;
+                width: 43.5x;
+                height: 56px;
+                margin: 8px 0;
+            }
+        }
+
+        &__arrow {
+            margin-right: 16px;
+
+            @include phone {
+                display: none;
+            }
+        }
+
+        &__arrow:hover {
+            transform: rotate(90deg);
+        }
+
+        &__arrow--mobile {
+            display: none;
+
+            @include phone {
+                display: inline-block;
+                margin-right: 14px;
+            }
         }
     }
 
@@ -29,8 +61,8 @@
         flex-flow: row wrap;
         justify-content: flex-end;
         list-style: none;
-        
-        @include phone{
+
+        @include phone {
             display: none;
         }
     }
@@ -56,5 +88,16 @@
     &__button {
         display: flex;
         align-items: center;
+    }
+
+    &__mobile-menu {
+        display: none;
+
+        @include phone {
+            display: inline-block;
+            align-self: center;
+            position: relative;
+            right: -10px;
+        }
     }
 }

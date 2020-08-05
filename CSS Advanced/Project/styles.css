@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fontlibrary.org/face/lato");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css");
 html,
 * {
-  font-family: "Lato", sans-serif;
+  font-family: "LatoRegular", sans-serif;
   font-size: 13px;
   font-weight: normal;
   font-style: normal;
@@ -323,12 +323,24 @@ body {
   width: 936px;
 }
 
+@media (max-width: 375px) {
+  .wrapper__candidate-form {
+    width: 335px;
+  }
+}
+
 .wrapper__contact-us {
   width: 850px;
 }
 
-.min-wrapper {
+.wrapper--min {
   width: 1064px;
+}
+
+@media (max-width: 375px) {
+  .wrapper--min {
+    width: 335px;
+  }
 }
 
 header,
@@ -343,24 +355,66 @@ header,
   grid-template-columns: 200px auto 82px;
 }
 
+@media (max-width: 375px) {
+  .navbar {
+    grid-template-columns: 200px auto auto;
+  }
+}
+
 .navbar__logo {
   display: flex;
   justify-content: start;
   align-items: center;
 }
 
-.navbar__logo :first-child {
-  margin-right: 16px;
-}
-
-.navbar__logo :first-child:hover {
-  transform: rotate(90deg);
-}
-
-.navbar__logo :last-child {
+.navbar__logo--horizontal {
   width: 122px;
   height: 42px;
   margin: 16px 0;
+}
+
+@media (max-width: 375px) {
+  .navbar__logo--horizontal {
+    display: none;
+  }
+}
+
+.navbar__logo--vertical {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .navbar__logo--vertical {
+    display: inline-block;
+    width: 43.5x;
+    height: 56px;
+    margin: 8px 0;
+  }
+}
+
+.navbar__logo__arrow {
+  margin-right: 16px;
+}
+
+@media (max-width: 375px) {
+  .navbar__logo__arrow {
+    display: none;
+  }
+}
+
+.navbar__logo__arrow:hover {
+  transform: rotate(90deg);
+}
+
+.navbar__logo__arrow--mobile {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .navbar__logo__arrow--mobile {
+    display: inline-block;
+    margin-right: 14px;
+  }
 }
 
 .navbar__items {
@@ -399,6 +453,19 @@ header,
   align-items: center;
 }
 
+.navbar__mobile-menu {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .navbar__mobile-menu {
+    display: inline-block;
+    align-self: center;
+    position: relative;
+    right: -10px;
+  }
+}
+
 .btn {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
@@ -407,6 +474,7 @@ header,
   padding: 10px 22px;
   text-transform: uppercase;
   font-weight: 800;
+  font-family: "Lato", sans-serif;
 }
 
 .btn__white {
@@ -436,6 +504,12 @@ header,
   grid-template-rows: 256px 558px 1472px 412px;
 }
 
+@media (max-width: 375px) {
+  .main__teachers {
+    grid-template-rows: 356px 1478px 1360px 674px;
+  }
+}
+
 .main__contact {
   display: grid;
   grid-template-rows: 426px 686px 572px;
@@ -445,18 +519,24 @@ header,
   z-index: -1;
   background-color: #44A9F8;
   display: grid;
-  grid-template-rows: 100px 1fr;
+  grid-template-rows: 86px 1fr;
 }
 
 .main__course_firts-step .label {
   justify-self: center;
-  margin-top: 68px;
+  align-self: end;
 }
 
-.main__course_firts-step h1 {
-  margin-top: 10px;
-  max-width: 650px;
+.main__course_firts-step h2 {
+  margin-top: 24px;
+  max-width: 629px;
   color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+  .main__course_firts-step h2 {
+    max-width: 335px;
+  }
 }
 
 .label {
@@ -474,10 +554,10 @@ header,
 }
 
 .label-block {
-  width: 1290px;
   display: grid;
+  height: 112px;
   background-color: #FFFFFF;
-  grid-template-columns: 163px 150px 210px 230px 240px auto;
+  grid-template-columns: 227px 10px 61px 56px 143px 56px 175px 56px 193px 56px auto;
   padding: 0 64px;
   border-radius: 12px;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
@@ -487,77 +567,162 @@ header,
   right: 0;
   margin-left: auto;
   margin-right: auto;
-}
-
-.label-block__button {
-  display: flex;
   align-items: center;
 }
 
-.label-block__button button {
-  padding: 14px 32px;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 32px 0;
-}
-
-.label-block__item {
-  display: grid;
-  grid-template-columns: 50px auto;
-  align-items: center;
-  justify-items: start;
-}
-
-.label-block__item img {
-  width: 32px;
-  height: 32px;
-}
-
-.label-block__item p {
-  margin: 0;
+.label-block p {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-}
-
-.label-block__item h4 {
   margin: 0;
+}
+
+.label-block h4 {
   color: #FF9100;
+  margin: 6px 0;
 }
 
-.label-block__money::before {
+@media (max-width: 375px) {
+  .label-block {
+    height: 562px;
+    grid-template-rows: 144px 10px 24px 102px 102px 102px auto;
+    grid-template-columns: 56px 207px;
+    padding: 0 24px;
+    align-items: flex-start;
+    top: 314px;
+  }
+}
+
+.label-block__button {
+  grid-column: 1 / 2;
+}
+
+@media (max-width: 375px) {
+  .label-block__button {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    align-self: center;
+  }
+}
+
+.label-block__button button {
+  padding: 14px 32px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media (max-width: 375px) {
+  .label-block__button button {
+    padding: 16px 94px;
+  }
+}
+
+.label-block__icon-money {
+  grid-column: 4 / 5;
+}
+
+@media (max-width: 375px) {
+  .label-block__icon-money {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+  }
+}
+
+.label-block__money {
+  grid-column: 5 / 6;
+}
+
+@media (max-width: 375px) {
+  .label-block__money {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+  }
+}
+
+.label-block__icon-people {
+  grid-column: 6 / 7;
+}
+
+@media (max-width: 375px) {
+  .label-block__icon-people {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+  }
+}
+
+.label-block__people {
+  grid-column: 7 / 8;
+}
+
+@media (max-width: 375px) {
+  .label-block__people {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+  }
+}
+
+.label-block__icon-calendar {
+  grid-column: 8 / 9;
+}
+
+@media (max-width: 375px) {
+  .label-block__icon-calendar {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+  }
+}
+
+.label-block__calendar {
+  grid-column: 9 / 10;
+}
+
+@media (max-width: 375px) {
+  .label-block__calendar {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+  }
+}
+
+.label-block__icon-location {
+  grid-column: 10 / 11;
+}
+
+@media (max-width: 375px) {
+  .label-block__icon-location {
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+  }
+}
+
+.label-block__location {
+  grid-column: 11 / 12;
+}
+
+@media (max-width: 375px) {
+  .label-block__location {
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+  }
+}
+
+.label-block__people::before, .label-block__calendar::before, .label-block__location::before {
   content: "";
   background: #F1F1F1;
   width: 2px;
   height: 24px;
   display: inline-block;
   position: absolute;
-  top: 45px;
-  right: 40px;
+  top: 30px;
+  left: -90px;
 }
 
-.label-block__people::before {
-  content: "";
-  background: #F1F1F1;
-  width: 2px;
-  height: 24px;
-  display: inline-block;
-  position: absolute;
-  top: 45px;
-  right: 35px;
-}
-
-.label-block__calendar::before {
-  content: "";
-  background: #F1F1F1;
-  width: 2px;
-  height: 24px;
-  display: inline-block;
-  position: absolute;
-  top: 45px;
-  right: 28px;
+@media (max-width: 375px) {
+  .label-block__people::before, .label-block__calendar::before, .label-block__location::before {
+    transform: rotate(90deg);
+    top: -46px;
+    left: -48px;
+  }
 }
 
 .main__course__information {
@@ -575,7 +740,7 @@ header,
 @media (max-width: 375px) {
   .main__course__information__container {
     height: 1325px;
-    margin-top: 566px;
+    margin-top: 550px;
     grid-template-columns: 50px 285px;
     grid-template-rows: 652px 254px 88px 80px 42px 32px 48px auto;
   }
@@ -1026,20 +1191,30 @@ header,
 }
 
 .main__teachers__title {
+  display: grid;
   background-color: #FFB402;
+}
+
+.main__teachers__title__container {
   color: #FFFFFF;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
+  display: grid;
+  grid-template-rows: 128px auto;
+  justify-items: center;
   text-align: center;
 }
 
-.main__teachers__title h1 {
-  margin-top: 64px;
-  margin-bottom: 24px;
+@media (max-width: 375px) {
+  .main__teachers__title__container {
+    grid-template-rows: 128px 224px;
+  }
 }
 
-.main__teachers__title p {
+.main__teachers__title__container h1 {
+  margin-top: 64px;
+  margin-bottom: 0;
+}
+
+.main__teachers__title__container p {
   max-width: 850px;
   margin: 0;
 }
@@ -1055,22 +1230,80 @@ header,
   border-bottom: 10px dotted #DFF4F1;
 }
 
-.main__teachers__managers__container .manager-name {
-  margin-top: 0;
-  margin-bottom: 8px;
-  color: #41BEAD;
+@media (max-width: 375px) {
+  .main__teachers__managers__container {
+    padding-top: 48px;
+    grid-template-rows: 220px 500px 220px 480px;
+    grid-template-columns: none;
+  }
 }
 
-.main__teachers__managers__container .manager-position {
-  margin: 0;
-  font-size: 14px;
-  color: #B2B2B2;
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container--vera-image {
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
 }
 
-.main__teachers__managers__container .manager-info {
-  max-width: 409px;
-  margin-top: 24px;
-  color: #565656;
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container--vera-info {
+    grid-row: 2 / 3;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container--vladimir-image {
+    grid-row: 3 / 4;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container--vladimir-info {
+    grid-row: 4 / 5;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__teachers__managers__container .manager-name {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #41BEAD;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container .manager-name {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__teachers__managers__container .manager-position {
+    margin: 0;
+    font-size: 14px;
+    color: #B2B2B2;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container .manager-position {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__teachers__managers__container .manager-info {
+    max-width: 409px;
+    margin-top: 24px;
+    color: #565656;
+  }
+}
+
+@media (max-width: 375px) and (max-width: 375px) {
+  .main__teachers__managers__container .manager-info {
+    max-width: 335px;
+  }
 }
 
 .main__teachers__all {
@@ -1087,8 +1320,31 @@ header,
   grid-column-gap: 32px;
 }
 
+@media (max-width: 375px) {
+  .main__teachers__all--container {
+    padding-top: 64px;
+    grid-template-rows: 264px 264px 264px auto;
+    grid-template-columns: none;
+    grid-row-gap: 48px;
+    grid-column-gap: 0;
+    justify-self: center;
+  }
+}
+
 .main__teachers__all .current-teacher-container {
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .main__teachers__all .current-teacher-container {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__teachers__all .current-teacher-container__mobile-hidden {
+    display: none;
+  }
 }
 
 .main__teachers__all .current-teacher-container h4 {
@@ -1165,17 +1421,38 @@ header,
   margin-top: 64px;
 }
 
+@media (max-width: 375px) {
+  .main__teachers__candidate-form .candidate-form-and-information {
+    grid-template-rows: 212px 88px 88px 98px auto;
+    grid-template-columns: none;
+  }
+}
+
 .main__teachers__candidate-form .candidate-form-and-information__main {
   grid-column: 1 / span all;
-  width: 850px;
+  max-width: 850px;
   text-align: center;
-  justify-self: center;
   color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+  .main__teachers__candidate-form .candidate-form-and-information__main {
+    max-width: 335px;
+    text-align: start;
+  }
 }
 
 .main__teachers__candidate-form .candidate-form-and-information h1 {
   margin-top: 0;
   margin-bottom: 24px;
+}
+
+@media (max-width: 375px) {
+  .main__teachers__candidate-form .candidate-form-and-information h1 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 
 .main__teachers__candidate-form .candidate-form-and-information p {
@@ -1191,6 +1468,12 @@ header,
   padding: 16px;
 }
 
+@media (max-width: 375px) {
+  .main__teachers__candidate-form .candidate-form-and-information input {
+    width: 335px;
+  }
+}
+
 .main__teachers__candidate-form .candidate-form-and-information ::placeholder {
   color: #FFFFFF;
 }
@@ -1199,8 +1482,21 @@ header,
   justify-self: end;
 }
 
+@media (max-width: 375px) {
+  .main__teachers__candidate-form .candidate-form-and-information__button {
+    justify-self: center;
+  }
+}
+
 .main__teachers__candidate-form .candidate-form-and-information button {
   padding: 14px 32px;
+}
+
+@media (max-width: 375px) {
+  .main__teachers__candidate-form .candidate-form-and-information button {
+    padding: 14px 129px;
+    font-size: 16px;
+  }
 }
 
 .main__contact__map {
@@ -1577,4 +1873,12 @@ footer .footer__copyright,
 
 .relative {
   position: relative;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.bold-text--16 {
+  font-size: 16px;
 }

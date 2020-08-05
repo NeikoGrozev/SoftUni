@@ -10,6 +10,10 @@
 .main__teachers {
     display: grid;
     grid-template-rows: 256px 558px 1472px 412px;
+
+    @include phone {
+        grid-template-rows: 356px 1478px 1360px 674px;
+    }
 }
 
 .main__contact {

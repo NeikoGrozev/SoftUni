@@ -13,8 +13,10 @@
         <section class="wrapper">
             <section class="navbar">
                 <div class="navbar__logo">
-                    <img src="./Repository/Icons/header_arrow.png">
-                    <img src="./Repository/Icons/SoftUni_Logo.png" alt="SoftUni Logo">
+                    <img class="navbar__logo__arrow" src="./Repository/Icons/header_arrow.png">
+                    <img class="navbar__logo__arrow--mobile" src="./Repository/Icons/header_arrow_mobile.png" alt="">
+                    <img class="navbar__logo--horizontal" src="./Repository/Icons/SoftUni_Logo.png" alt="SoftUni Logo">
+                    <img class="navbar__logo--vertical" src="./Repository/Icons/SoftUni_Logo_vertical.png" alt="SoftUni Logo">
                 </div>
                 <ul class="navbar__items">
                     <li class="navbar__item">
@@ -41,23 +43,30 @@
                         вход
                     </button>
                 </div>
+                <div class="navbar__mobile-menu">
+                    <img src="./Repository/Icons/mobile-menu.png">
+                </div>
             </section>
         </section>
     </header>
 
     <main class="main__teachers">
-        <section class="main__teachers__title">
-            <h1>Преподаватели</h1>
-            <p>
-                Високото качество на обучение в СофтУни е гарантирано от внимателно подбран преподавателски състав.
-                Вярваме, че всяко дете заслужава обучители, които да го подкрепят и мотивират! Екипът ни се състои от
-                професионалисти в сферата на програмирането, специалисти в работата с деца и мотивирани ментори.
-            </p>
+        <section class="main__teachers__title grid-center">
+            <section class="wrapper main__teachers__title__container">
+                <h1>Преподаватели</h1>
+                <p>
+                    Високото качество на обучение в СофтУни е гарантирано от внимателно подбран преподавателски състав.
+                    Вярваме, че всяко дете заслужава обучители, които да го подкрепят и мотивират! Екипът ни се състои
+                    от
+                    професионалисти в сферата на програмирането, специалисти в работата с деца и мотивирани ментори.
+                </p>
+            </section>
         </section>
         <section class="main__teachers__managers grid-center">
-            <section class="main__teachers__managers__container wrapper">
-                <img src="./Repository/Images/Vera-Bogateva.png" alt="Vera Bogateva Image">
-                <div>
+            <section class="wrapper main__teachers__managers__container">
+                <img class="main__teachers__managers__container--vera-image" src="./Repository/Images/Vera-Bogateva.png"
+                    alt="Vera Bogateva Image">
+                <div class="main__teachers__managers__container--vera-info">
                     <h4 class="manager-name">Вяра Богатева</h4>
                     <p class="manager-position">Образователен Директор</p>
                     <p class="manager-info">
@@ -71,8 +80,8 @@
                         институции.
                     </p>
                 </div>
-                <img src="./Repository/Images/Vladimir-Nikolov.png" alt="Vladimir Nikolov Image">
-                <div>
+                <img class="main__teachers__managers__container--vladimir-image" src="./Repository/Images/Vladimir-Nikolov.png" alt="Vladimir Nikolov Image">
+                <div class="main__teachers__managers__container--vladimir-info">
                     <h4 class="manager-name">Владимир Николов</h4>
                     <p class="manager-position">Ръководител</p>
                     <p class="manager-info">
@@ -90,7 +99,7 @@
 
         </section>
         <section class="main__teachers__all grid-center">
-            <section class="main__teachers__all--container min-wrapper">
+            <section class="main__teachers__all--container wrapper--min">
                 <div class="current-teacher-container">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
@@ -105,7 +114,7 @@
                     <h4>Елена Стаменова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -147,7 +156,7 @@
                     <h4>Елена Барутчиева</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -161,7 +170,7 @@
                     <h4>Елена Стаменова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -189,7 +198,7 @@
                     <h4>Надя Петрова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -203,7 +212,7 @@
                     <h4>Елена Барутчиева</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -217,7 +226,7 @@
                     <h4>Елена Стаменова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -231,7 +240,7 @@
                     <h4>Симеон Шейтанов</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -245,7 +254,7 @@
                     <h4>Надя Петрова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -259,7 +268,7 @@
                     <h4>Елена Барутчиева</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -273,7 +282,7 @@
                     <h4>Елена Стаменова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -287,7 +296,7 @@
                     <h4>Симеон Шейтанов</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"
@@ -301,7 +310,7 @@
                     <h4>Надя Петрова</h4>
                     <p>Преподавател</p>
                 </div>
-                <div class="current-teacher-container">
+                <div class="current-teacher-container current-teacher-container__mobile-hidden">
                     <div class="current-teacher relative">
                         <div class="current-teacher__image">
                             <img class="teacher-avatar" src="./Repository/Images/teacher-avatar.png"

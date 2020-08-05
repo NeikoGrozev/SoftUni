@@ -9,22 +9,65 @@
         padding-top: 96px;
         border-bottom: 10px dotted $primary--50;
 
-        .manager-name {
-            margin-top: 0;
-            margin-bottom: 8px;
-            color: $primary--300;
-        }
+        @include phone {
+            padding-top: 48px;
+            grid-template-rows: 220px 500px 220px 480px;
+            grid-template-columns: none;
 
-        .manager-position {
-            margin: 0;
-            font-size: 14px;
-            color: $grey--400;
-        }
+            &--vera-image {
+                @include phone {
+                    grid-row: 1 / 2;
+                    justify-self: center;
+                }
+            }
 
-        .manager-info {
-            max-width: 409px;
-            margin-top: 24px;
-            color: $grey--700;
+            &--vera-info {
+                @include phone {
+                    grid-row: 2 / 3;
+                }
+            }
+
+            &--vladimir-image {
+                @include phone {
+                    grid-row: 3 / 4;
+                    justify-self: center;
+                }
+            }
+
+            &--vladimir-info {
+                @include phone {
+                    grid-row: 4 / 5;
+                }
+            }
+            .manager-name {
+                margin-top: 0;
+                margin-bottom: 8px;
+                color: $primary--300;
+
+                @include phone {
+                    text-align: center;
+                }
+            }
+
+            .manager-position {
+                margin: 0;
+                font-size: 14px;
+                color: $grey--400;
+
+                @include phone {
+                    text-align: center;
+                }
+            }
+
+            .manager-info {
+                max-width: 409px;
+                margin-top: 24px;
+                color: $grey--700;
+
+                @include phone{
+                    max-width: 335px;
+                }
+            }
         }
     }
 }
