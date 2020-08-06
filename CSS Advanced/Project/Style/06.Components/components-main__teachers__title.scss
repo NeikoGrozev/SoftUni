@@ -18,11 +18,26 @@
         h1 {
             margin-top: 64px;
             margin-bottom: 0;
+            opacity: 0;
+            animation: hiddenText ease-out 1.5s forwards;
         }
 
         p {
             max-width: 850px;
             margin: 0;
+            opacity: 0;
+            animation: hiddenText ease-out 2s forwards 1s;
+        }
+
+        @keyframes hiddenText {
+            0%{
+                opacity: 0;
+            }
+    
+            100%{
+                opacity: 1;
+            }
+            
         }
     }
 }

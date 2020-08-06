@@ -3,10 +3,10 @@
 .main__cours__program {
     display: grid;
     padding: 65px 0;
-    background-image: url("../../Repository/Images/main_program-background.png");
+    background-image: url("Repository/Images/main_program-background.png");
 
     @include phone {
-        background-image: url("../../Repository/Images/main-program-background-phone.png");
+        background-image: url("Repository/Images/main-program-background-phone.png");
     }
 
     &__container {

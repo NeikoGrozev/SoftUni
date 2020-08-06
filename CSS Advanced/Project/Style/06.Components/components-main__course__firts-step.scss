@@ -9,16 +9,29 @@
     .label {
         justify-self: center;
         align-self: end;
-
+        opacity: 0;
+        animation: hiddenText ease-out 1.5s forwards;
     }
 
     h2 {
         margin-top: 24px;
         max-width: 629px;
         color: $white;
+        opacity: 0;
+        animation: hiddenText ease-out 2s forwards 1s;
 
-        @include phone{
+        @include phone {
             max-width: 335px;
+        }
+    }
+
+    @keyframes hiddenText {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
         }
     }
 }
