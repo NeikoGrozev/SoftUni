@@ -1,14 +1,18 @@
 .main_contact__destination-guide {
   background-color: #FFF8E1;
+  display: -ms-grid;
   display: grid;
 }
 
 .main_contact__destination-guide .destination-guide__container {
   height: 380px;
   padding-top: 96px;
+  display: -ms-grid;
   display: grid;
-  grid-template-rows: 84px auto;
-  grid-template-columns: 442px 440px auto;
+  -ms-grid-rows: 84px auto;
+      grid-template-rows: 84px auto;
+  -ms-grid-columns: 442px 440px auto;
+      grid-template-columns: 442px 440px auto;
 }
 
 .main_contact__destination-guide .destination-guide__container h2,
@@ -22,12 +26,16 @@
 }
 
 .main_contact__destination-guide .destination-guide__container .destination-guide__title {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
   grid-row: 1 / 2;
   grid-column: 1 / span all;
-  justify-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .main_contact__destination-guide .destination-guide__container p {
   width: 407px;
   color: #565656;
 }
+/*# sourceMappingURL=components-main_contact__destination-guide.css.map */

@@ -1,8 +1,11 @@
-@import "./Style/01.Setting/settings-typography.scss";
 @import "./Style/01.Setting/settings-colors.scss";
 @import "./Style/01.Setting/settings-breakpoints.scss";
+@import "./Style/01.Setting/settings-shadow.scss";
+@import "./Style/01.Setting/settings-animation.scss";
+@import "./Style/01.Setting/settings-placeholde.scss";
 
 @import "./Style/03.Generic/generic-normalize.scss";
+@import "./Style/03.Generic/generic-typography.scss";
 
 @import "./Style/04.Elements/elements-body.scss";
 
@@ -12,12 +15,15 @@
 @import "./Style/06.Components/components-navigation.scss";
 @import "./Style/06.Components/components-button.scss";
 @import "./Style/06.Components/components-main.scss";
-@import "./Style/06.Components/components-main__course__firts-step.scss";
+@import "./Style/06.Components/components-first-step.scss";
 @import "./Style/06.Components/components-label.scss";
-@import "./Style/06.Components/components-main__course__information.scss";
-@import "./Style/06.Components/components-main__course__program.scss";
-@import "./Style/06.Components/components-main__course__more-information.scss";
-@import "./Style/06.Components/components-main__teachers__title.scss";
+@import "./Style/06.Components/components-information-container.scss";
+@import "./Style/06.Components/components-video-section.scss";
+@import "./Style/06.Components/components-program.scss";
+@import "./Style/06.Components/components-program-container.scss";
+@import "./Style/06.Components/components-select-section.scss";
+@import "./Style/06.Components/components-more-information-container.scss";
+@import "./Style/06.Components/components-teachers-title.scss";
 @import "./Style/06.Components/components-main__teachers__managers.scss";
 @import "./Style/06.Components/components-main__teachers__all.scss";
 @import "./Style/06.Components/components-main__teachers__candidate-form.scss";
@@ -29,3 +35,4 @@
 @import "./Style/07.Utilities/utilities-centered.scss";
 @import "./Style/07.Utilities/utilities-position.scss";
 @import "./Style/07.Utilities/utilities-bold-text.scss";
+@import "./Style/07.Utilities/utilities-grid.scss";

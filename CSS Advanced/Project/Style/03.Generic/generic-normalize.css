@@ -9,7 +9,8 @@ Use a better box model (opinionated).
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /**
@@ -17,7 +18,8 @@ Use a more readable tab size (opinionated).
 */
 :root {
   -moz-tab-size: 4;
-  tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
 }
 
 /**
@@ -68,7 +70,8 @@ Text-level semantics
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 abbr[title] {
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
 }
 
 /**
@@ -244,3 +247,4 @@ Add the correct display in Chrome and Safari.
 summary {
   display: list-item;
 }
+/*# sourceMappingURL=generic-normalize.css.map */

@@ -1,6 +1,7 @@
 @import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-animation.scss";
 
-.main__course_firts-step {
+.firts-step {
     z-index: -1;
     background-color: $blue--400;
     display: grid;
@@ -11,8 +12,8 @@
         align-self: end;
         opacity: 0;
         animation: hiddenText ease-out 1.5s forwards;
-    }
-
+    }    
+        
     h2 {
         margin-top: 24px;
         max-width: 629px;
@@ -22,16 +23,6 @@
 
         @include phone {
             max-width: 335px;
-        }
-    }
-
-    @keyframes hiddenText {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
         }
     }
 }

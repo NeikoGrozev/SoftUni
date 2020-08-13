@@ -19,6 +19,10 @@ h6 {
   font-style: normal;
 }
 
+.h5-like {
+  font-family: "LatoRegular", sans-serif;
+}
+
 h1 {
   font-weight: 600;
   font-size: 36px;

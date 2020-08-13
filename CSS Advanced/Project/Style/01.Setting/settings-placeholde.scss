@@ -1,0 +1,11 @@
+%rotateCharacter {
+    @for $i from 1 to 20 {
+        &:nth-child(#{$i}) {
+            @if $i==1 {
+                animation-delay: 0s;
+            } @else {
+                animation-delay: #{0.001 + $i - 15.5}s;
+            }
+        }
+    }
+}

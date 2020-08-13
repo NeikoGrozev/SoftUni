@@ -1,7 +1,7 @@
 @import "../01.Setting/settings-colors.scss";
 
 .btn {
-    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: $btn-shadow;
     border-radius: 100px;
     border: none;
     outline: none;
@@ -16,7 +16,7 @@
         border: 1px solid $secondary--800;
     }
 
-    &__secondary--800 {
+    &__secondary {
         background-color: $secondary--800;
         color: $white;
     }
