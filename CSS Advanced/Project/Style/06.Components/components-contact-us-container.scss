@@ -1,9 +1,6 @@
 @import "../01.Setting/settings-colors.scss";
 
-.main__contact__contact-us {
-    display: grid;
-
-    .contact-us__container {
+    .contact-us-container {
         margin-top: 180px;
         height: 410px;
         display: grid;
@@ -65,4 +62,3 @@
             align-self: flex-end;
         }
     }
-}

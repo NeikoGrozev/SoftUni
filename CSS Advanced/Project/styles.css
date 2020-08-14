@@ -1468,11 +1468,7 @@ option {
   animation: hiddenText ease-out 2s forwards 1s;
 }
 
-.main__teachers__managers {
-  display: grid;
-}
-
-.main__teachers__managers__container {
+.managers-container {
   display: grid;
   grid-template-columns: 220px 441px 220px auto;
   padding-top: 96px;
@@ -1480,7 +1476,7 @@ option {
 }
 
 @media (max-width: 375px) {
-  .main__teachers__managers__container {
+  .managers-container {
     padding-top: 48px;
     grid-template-rows: 220px 500px 220px 480px;
     grid-template-columns: none;
@@ -1488,33 +1484,33 @@ option {
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container--vera-image {
+  .managers-container__vera-image {
     grid-row: 1 / 2;
     justify-self: center;
   }
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container--vera-info {
+  .managers-container__vera-info {
     grid-row: 2 / 3;
   }
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container--vladimir-image {
+  .managers-container__vladimir-image {
     grid-row: 3 / 4;
     justify-self: center;
   }
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container--vladimir-info {
+  .managers-container__vladimir-info {
     grid-row: 4 / 5;
   }
 }
 
 @media (max-width: 375px) {
-  .main__teachers__managers__container .manager-name {
+  .managers-container__name {
     margin-top: 0;
     margin-bottom: 8px;
     color: #41BEAD;
@@ -1522,13 +1518,13 @@ option {
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container .manager-name {
+  .managers-container__name {
     text-align: center;
   }
 }
 
 @media (max-width: 375px) {
-  .main__teachers__managers__container .manager-position {
+  .managers-container__position {
     margin: 0;
     font-size: 14px;
     color: #B2B2B2;
@@ -1536,13 +1532,13 @@ option {
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container .manager-position {
+  .managers-container__position {
     text-align: center;
   }
 }
 
 @media (max-width: 375px) {
-  .main__teachers__managers__container .manager-info {
+  .managers-container__info {
     max-width: 409px;
     margin-top: 24px;
     color: #565656;
@@ -1550,16 +1546,12 @@ option {
 }
 
 @media (max-width: 375px) and (max-width: 375px) {
-  .main__teachers__managers__container .manager-info {
+  .managers-container__info {
     max-width: 335px;
   }
 }
 
-.main__teachers__all {
-  display: grid;
-}
-
-.main__teachers__all--container {
+.all-teachers-container {
   padding-top: 96px;
   padding-bottom: 128px;
   display: grid;
@@ -1570,7 +1562,7 @@ option {
 }
 
 @media (max-width: 375px) {
-  .main__teachers__all--container {
+  .all-teachers-container {
     padding-top: 64px;
     grid-template-rows: 264px 264px 264px auto;
     grid-template-columns: none;
@@ -1580,54 +1572,59 @@ option {
   }
 }
 
-.main__teachers__all .current-teacher-container {
+.current-teacher-container {
   text-align: center;
 }
 
 @media (max-width: 375px) {
-  .main__teachers__all .current-teacher-container {
+  .current-teacher-container {
     justify-self: center;
   }
 }
 
 @media (max-width: 375px) {
-  .main__teachers__all .current-teacher-container__mobile-hidden {
+  .current-teacher-container__mobile-hidden {
     display: none;
   }
 }
 
-.main__teachers__all .current-teacher-container h4 {
+.current-teacher-container h4 {
   margin-top: 24px;
   margin-bottom: 8px;
   color: #41BEAD;
 }
 
-.main__teachers__all .current-teacher-container p {
+.current-teacher-container p {
   font-size: 14px;
   font-weight: 500;
   color: #B2B2B2;
   margin: 0;
 }
 
-.main__teachers__all .current-teacher {
+.current-teacher {
   margin: 0 27px;
   border-radius: 50%;
 }
 
-.main__teachers__all .current-teacher__image {
+.current-teacher__image {
   width: 188px;
   height: 188px;
   border-radius: 50%;
   border: 8px solid #41BEAD;
 }
 
-.main__teachers__all .current-teacher .teacher-avatar {
+.current-teacher__avatar {
   width: 172px;
   height: 172px;
   border-radius: 50%;
 }
 
-.main__teachers__all .current-teacher .hover-item {
+.current-teacher:hover .hover-item {
+  display: block;
+  cursor: pointer;
+}
+
+.hover-item {
   display: none;
   position: absolute;
   top: 8px;
@@ -1639,7 +1636,7 @@ option {
   opacity: 0.8;
 }
 
-.main__teachers__all .current-teacher .hover-item p {
+.hover-item p {
   text-transform: uppercase;
   color: #FFFFFF;
   font-weight: bold;
@@ -1647,23 +1644,18 @@ option {
   line-height: 12px;
 }
 
-.main__teachers__all .current-teacher .hover-item__image {
+.hover-item__image {
   margin-top: 42px;
   margin-bottom: 12px;
 }
 
-.main__teachers__all .current-teacher:hover .hover-item {
-  display: block;
-  cursor: pointer;
-}
-
-.main__teachers__candidate-form {
+.candidate-form {
   display: grid;
   background-color: #66B9F8;
   border-top: 12px solid #92CDFB;
 }
 
-.main__teachers__candidate-form .candidate-form-and-information {
+.candidate-form-information {
   display: grid;
   grid-template-rows: 156px 74px;
   grid-template-columns: 260px 260px 260px 156px;
@@ -1671,13 +1663,13 @@ option {
 }
 
 @media (max-width: 375px) {
-  .main__teachers__candidate-form .candidate-form-and-information {
+  .candidate-form-information {
     grid-template-rows: 212px 88px 88px 98px auto;
     grid-template-columns: none;
   }
 }
 
-.main__teachers__candidate-form .candidate-form-and-information__main {
+.candidate-form-information__main {
   grid-column: 1 / span all;
   max-width: 850px;
   text-align: center;
@@ -1685,30 +1677,30 @@ option {
 }
 
 @media (max-width: 375px) {
-  .main__teachers__candidate-form .candidate-form-and-information__main {
+  .candidate-form-information__main {
     max-width: 335px;
     text-align: start;
   }
 }
 
-.main__teachers__candidate-form .candidate-form-and-information h1 {
+.candidate-form-information h1 {
   margin-top: 0;
   margin-bottom: 24px;
 }
 
 @media (max-width: 375px) {
-  .main__teachers__candidate-form .candidate-form-and-information h1 {
+  .candidate-form-information h1 {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
   }
 }
 
-.main__teachers__candidate-form .candidate-form-and-information p {
+.candidate-form-information p {
   margin: 0;
 }
 
-.main__teachers__candidate-form .candidate-form-and-information input {
+.candidate-form-information input {
   width: 228px;
   height: 52px;
   border-radius: 6px;
@@ -1718,43 +1710,43 @@ option {
 }
 
 @media (max-width: 375px) {
-  .main__teachers__candidate-form .candidate-form-and-information input {
+  .candidate-form-information input {
     width: 335px;
   }
 }
 
-.main__teachers__candidate-form .candidate-form-and-information ::placeholder {
+.candidate-form-information ::placeholder {
   color: #FFFFFF;
 }
 
-.main__teachers__candidate-form .candidate-form-and-information__button {
+.candidate-form-information__button {
   justify-self: end;
 }
 
 @media (max-width: 375px) {
-  .main__teachers__candidate-form .candidate-form-and-information__button {
+  .candidate-form-information__button {
     justify-self: center;
   }
 }
 
-.main__teachers__candidate-form .candidate-form-and-information button {
+.candidate-form-information button {
   padding: 14px 32px;
 }
 
 @media (max-width: 375px) {
-  .main__teachers__candidate-form .candidate-form-and-information button {
+  .candidate-form-information button {
     padding: 14px 129px;
     font-size: 16px;
   }
 }
 
-.main__contact__map {
+.map {
   background-image: url("Repository/Images/Map.png");
   background-size: cover;
   z-index: -1;
 }
 
-.main__contact__map .map-info {
+.map-info {
   width: 519px;
   height: 382px;
   background-color: #FFFFFF;
@@ -1770,54 +1762,50 @@ option {
   color: #565656;
 }
 
-.main__contact__map .map-info h4 {
+.map-info h4 {
   margin-top: 0;
   margin-bottom: 18px;
   color: #41BEAD;
 }
 
-.main__contact__map .map-info__address p {
+.map-info__address p {
   width: 216px;
 }
 
-.main__contact__map .map-info__work-time div {
+.map-info__work-time div {
   display: grid;
   grid-template-columns: 112px auto;
 }
 
-.main__contact__map .map-info__work-time div p {
+.map-info__work-time div p {
   margin: 0;
   margin-bottom: 14px;
 }
 
-.main__contact__map .map-info .text-secondary {
+.map-info .text-secondary {
   color: #FF9100;
 }
 
-.main__contact__map .map-info__contact p {
+.map-info__contact p {
   margin-top: 0;
 }
 
-.main__contact__map .map-info__contact--phone {
+.map-info__contact-phone {
   margin-bottom: 12px;
 }
 
-.main__contact__map .map-info__contact--email {
+.map-info__contact-email {
   margin-bottom: 24px;
 }
 
-.main__contact__map .map-info__button {
+.map-info__button {
   grid-row: 3 / 4;
   grid-column: 1 / 3;
   align-self: center;
   justify-self: center;
 }
 
-.main__contact__contact-us {
-  display: grid;
-}
-
-.main__contact__contact-us .contact-us__container {
+.contact-us-container {
   margin-top: 180px;
   height: 410px;
   display: grid;
@@ -1825,42 +1813,42 @@ option {
   grid-template-columns: 441px auto;
 }
 
-.main__contact__contact-us .contact-us__container__title {
+.contact-us-container__title {
   grid-row: 1 / 2;
   grid-column: 1 / span all;
   color: #41BEAD;
   justify-self: center;
 }
 
-.main__contact__contact-us .contact-us__container h2 {
+.contact-us-container h2 {
   margin: 0;
 }
 
-.main__contact__contact-us .contact-us__container input {
+.contact-us-container input {
   border: 1px solid #919191;
   border-radius: 6px;
   padding: 16px;
 }
 
-.main__contact__contact-us .contact-us__container ::placeholder {
+.contact-us-container ::placeholder {
   color: #919191;
 }
 
-.main__contact__contact-us .contact-us__container__input-first {
+.contact-us-container__input-first {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   width: 409px;
   height: 52px;
 }
 
-.main__contact__contact-us .contact-us__container__input-second {
+.contact-us-container__input-second {
   grid-row: 2 / 3;
   grid-column: 2 / 3;
   width: 409px;
   height: 52px;
 }
 
-.main__contact__contact-us .contact-us__container__input-third {
+.contact-us-container__input-third {
   grid-row: 3 / 4;
   grid-column: 1 / 3;
   width: 100%;
@@ -1869,22 +1857,22 @@ option {
   border-radius: 6px;
 }
 
-.main__contact__contact-us .contact-us__container__input-third::placeholder {
+.contact-us-container__input-third::placeholder {
   padding: 16px;
 }
 
-.main__contact__contact-us .contact-us__container__button {
+.contact-us-container__button {
   grid-row: 4 / 5;
   grid-column: 1 / 2;
   align-self: flex-end;
 }
 
-.main_contact__destination-guide {
+.destination-guide {
   background-color: #FFF8E1;
   display: grid;
 }
 
-.main_contact__destination-guide .destination-guide__container {
+.destination-guide__container {
   height: 380px;
   padding-top: 96px;
   display: grid;
@@ -1892,25 +1880,25 @@ option {
   grid-template-columns: 442px 440px auto;
 }
 
-.main_contact__destination-guide .destination-guide__container h2,
-.main_contact__destination-guide .destination-guide__container h3 {
+.destination-guide__container h2,
+.destination-guide__container h3 {
   color: #41BEAD;
   margin: 0;
 }
 
-.main_contact__destination-guide .destination-guide__container h3 {
+.destination-guide__container h3 {
   margin-bottom: 2px;
 }
 
-.main_contact__destination-guide .destination-guide__container .destination-guide__title {
+.destination-guide__container p {
+  width: 407px;
+  color: #565656;
+}
+
+.destination-guide__title {
   grid-row: 1 / 2;
   grid-column: 1 / span all;
   justify-self: center;
-}
-
-.main_contact__destination-guide .destination-guide__container p {
-  width: 407px;
-  color: #565656;
 }
 
 footer,
@@ -1952,16 +1940,16 @@ footer-container,
   }
 }
 
-footer-container--logo,
-.footer-container--logo {
+footer-container__logo,
+.footer-container__logo {
   width: 202px;
   height: 403px;
   position: absolute;
   bottom: -116px;
 }
 
-footer-container--title,
-.footer-container--title {
+footer-container__title,
+.footer-container__title {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 10px;
@@ -2004,8 +1992,8 @@ footer-container--title,
   }
 }
 
-footer .footer__nav,
-.footer .footer__nav {
+footer__nav,
+.footer__nav {
   padding: 0;
   margin: 0;
   display: flex;
@@ -2015,41 +2003,32 @@ footer .footer__nav,
 }
 
 @media (max-width: 375px) {
-  footer .footer__nav,
-.footer .footer__nav {
+  footer__nav,
+.footer__nav {
     max-height: 248px;
   }
 }
 
-footer .footer__nav--item,
-.footer .footer__nav--item {
-  margin: 6px 0;
-}
-
-footer .footer__nav a,
-.footer .footer__nav a {
+footer__nav a,
+.footer__nav a {
   text-decoration: none;
   color: #E6E6E6;
   font-size: 16px;
   line-height: 19px;
 }
 
-footer .footer__nav a:hover,
-.footer .footer__nav a:hover {
+footer__nav a:hover,
+.footer__nav a:hover {
   color: #41BEAD;
 }
 
-footer .footer__nav--icons,
-.footer .footer__nav--icons {
-  display: flex;
-  flex-flow: row wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+footer__nav-item,
+.footer__nav-item {
+  margin: 6px 0;
 }
 
-footer .footer__nav--icons,
-.footer .footer__nav--icons {
+footer__nav-icons,
+.footer__nav-icons {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
@@ -2058,37 +2037,37 @@ footer .footer__nav--icons,
 }
 
 @media (max-width: 375px) {
-  footer .footer__nav--icons,
-.footer .footer__nav--icons {
+  footer__nav-icons,
+.footer__nav-icons {
     margin-top: 24px;
   }
 }
 
-footer .footer__nav--icons__item,
-.footer .footer__nav--icons__item {
+footer__nav-icons-item,
+.footer__nav-icons-item {
   margin-right: 20px;
 }
 
-footer .footer__nav--icons__item a,
-.footer .footer__nav--icons__item a {
+footer__nav-icons-item a,
+.footer__nav-icons-item a {
   display: block;
   font-style: normal;
   font-weight: normal;
   color: #E6E6E6;
 }
 
-footer .footer__nav--icons__item a i,
-.footer .footer__nav--icons__item a i {
+footer__nav-icons-item a i,
+.footer__nav-icons-item a i {
   font-size: 30px;
 }
 
-footer .footer__nav--icons__item a:hover,
-.footer .footer__nav--icons__item a:hover {
+footer__nav-icons-item a:hover,
+.footer__nav-icons-item a:hover {
   color: #41BEAD;
 }
 
-footer .footer__copyright,
-.footer .footer__copyright {
+footer__copyright,
+.footer__copyright {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2100,8 +2079,8 @@ footer .footer__copyright,
 }
 
 @media (max-width: 375px) {
-  footer .footer__copyright,
-.footer .footer__copyright {
+  footer__copyright,
+.footer__copyright {
     grid-row: 4 / 5;
     grid-column: 1 / 3;
     margin: 0;

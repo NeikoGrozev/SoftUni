@@ -1,0 +1,26 @@
+@import "../01.Setting/settings-colors.scss";
+
+.hover-item {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: $secondary--800;
+    width: 172px;
+    height: 172px;
+    border-radius: 50%;
+    opacity: 0.8;
+
+    p {
+        text-transform: uppercase;
+        color: $white;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    &__image {
+        margin-top: 42px;
+        margin-bottom: 12px;
+    }
+}

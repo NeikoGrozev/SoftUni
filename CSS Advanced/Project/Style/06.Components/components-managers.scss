@@ -1,0 +1,69 @@
+@import "../01.Setting/settings-colors.scss";
+
+.managers-container {
+    display: grid;
+    grid-template-columns: 220px 441px 220px auto;
+    padding-top: 96px;
+    border-bottom: 10px dotted $primary--50;
+
+    @include phone {
+        padding-top: 48px;
+        grid-template-rows: 220px 500px 220px 480px;
+        grid-template-columns: none;
+
+        &__vera-image {
+            @include phone {
+                grid-row: 1 / 2;
+                justify-self: center;
+            }
+        }
+
+        &__vera-info {
+            @include phone {
+                grid-row: 2 / 3;
+            }
+        }
+
+        &__vladimir-image {
+            @include phone {
+                grid-row: 3 / 4;
+                justify-self: center;
+            }
+        }
+
+        &__vladimir-info {
+            @include phone {
+                grid-row: 4 / 5;
+            }
+        }
+        &__name {
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: $primary--300;
+
+            @include phone {
+                text-align: center;
+            }
+        }
+
+        &__position {
+            margin: 0;
+            font-size: 14px;
+            color: $grey--400;
+
+            @include phone {
+                text-align: center;
+            }
+        }
+
+        &__info {
+            max-width: 409px;
+            margin-top: 24px;
+            color: $grey--700;
+
+            @include phone {
+                max-width: 335px;
+            }
+        }
+    }
+}

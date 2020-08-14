@@ -1,0 +1,28 @@
+@import "../01.Setting/settings-colors.scss";
+
+.current-teacher-container {
+    text-align: center;
+
+    @include phone {
+        justify-self: center;
+    }
+
+    &__mobile-hidden {
+        @include phone {
+            display: none;
+        }
+    }
+
+    h4 {
+        margin-top: 24px;
+        margin-bottom: 8px;
+        color: $primary--300;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 500;
+        color: $grey--400;
+        margin: 0;
+    }
+}

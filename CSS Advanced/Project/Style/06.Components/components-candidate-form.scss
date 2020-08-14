@@ -1,0 +1,7 @@
+@import "../01.Setting/settings-colors.scss";
+
+.candidate-form {
+    display: grid;
+    background-color: $blue--300;
+    border-top: 12px solid $blue--200;    
+}

@@ -1,0 +1,61 @@
+@import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-shadow.scss";
+
+.map-info {
+    width: 519px;
+    height: 382px;
+    background-color: $white;
+    box-shadow: $secondary-shadow;
+    border-radius: 12px;
+    position: absolute;
+    bottom: -84px;
+    left: 75px;
+    padding: 32px;
+    display: grid;
+    grid-template-rows: 150px 116px auto;
+    grid-template-columns: 240px auto;
+    color: $grey--700;
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 18px;
+        color: $primary--300;
+    }
+
+    &__address p {
+        width: 216px;
+    }
+
+    &__work-time div {
+        display: grid;
+        grid-template-columns: 112px auto;
+
+        p {
+            margin: 0;
+            margin-bottom: 14px;
+        }
+    }
+
+    .text-secondary {
+        color: $secondary--800;
+    }
+
+    &__contact p {
+        margin-top: 0;
+    }
+
+    &__contact-phone {
+        margin-bottom: 12px;
+    }
+
+    &__contact-email{
+        margin-bottom: 24px;
+    }
+
+    &__button{
+        grid-row: 3 / 4;
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+}

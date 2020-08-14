@@ -1,0 +1,26 @@
+@import "../01.Setting/settings-colors.scss";
+
+.current-teacher {
+    margin: 0 27px;
+    border-radius: 50%;
+
+    &__image {
+        width: 188px;
+        height: 188px;
+        border-radius: 50%;
+        border: 8px solid $primary--300;
+    }
+
+    &__avatar {
+        width: 172px;
+        height: 172px;
+        border-radius: 50%;
+    }    
+
+    &:hover {
+        .hover-item {
+            display: block;
+            cursor: pointer;
+        }
+    }
+}
