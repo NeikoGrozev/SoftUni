@@ -13,7 +13,7 @@ select {
     appearance: none;
     position: relative;
 
-    @include phone {
+    @include iphone8 {
         white-space: pre-wrap;
     }
 }

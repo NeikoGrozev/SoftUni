@@ -21,7 +21,7 @@
         opacity: 0;
         animation: hiddenText ease-out 2s forwards 1s;
 
-        @include phone {
+        @include iphone8 {
             max-width: 335px;
         }
     }

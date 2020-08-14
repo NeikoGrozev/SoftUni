@@ -7,7 +7,7 @@
     grid-template-columns: 260px 260px 260px 156px;
     margin-top: 64px;
 
-    @include phone {
+    @include iphone8 {
         grid-template-rows: 212px 88px 88px 98px auto;
         grid-template-columns: none;
     }
@@ -18,7 +18,7 @@
         text-align: center;
         color: $white;
 
-        @include phone {
+        @include iphone8 {
             max-width: 335px;
             text-align: start;
         }
@@ -28,7 +28,7 @@
         margin-top: 0;
         margin-bottom: 24px;
 
-        @include phone {
+        @include iphone8 {
             font-weight: bold;
             font-size: 24px;
             line-height: 30px;
@@ -47,7 +47,7 @@
         background-color: $blue--300;
         padding: 16px;
 
-        @include phone{
+        @include iphone8{
             width: 335px;
         }
     }
@@ -59,7 +59,7 @@
     &__button {
         justify-self: end;
 
-        @include phone{
+        @include iphone8{
             justify-self: center;
         }
     }
@@ -67,7 +67,7 @@
     button {
         padding: 14px 32px;
 
-        @include phone{
+        @include iphone8{
             padding: 14px 129px;
             font-size: 16px;
         }

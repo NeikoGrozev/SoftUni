@@ -3,7 +3,7 @@
     padding: 65px 0;
     background-image: url("Repository/Images/main_program-background.png");
 
-    @include phone {
+    @include iphone8 {
         background-image: url("Repository/Images/main-program-background-phone.png");
     }    
 }

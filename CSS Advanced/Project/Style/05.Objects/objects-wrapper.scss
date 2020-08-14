@@ -1,14 +1,14 @@
 .wrapper {
     width: 1290px;
 
-    @include phone {
+    @include iphone8 {
         width: 335px;
     }
 
     &__candidate-form {
         width: 936px;
 
-        @include phone{
+        @include iphone8{
             width: 335px;
         }
     }
@@ -20,7 +20,7 @@
     &--min {
         width: 1064px;
 
-        @include phone {
+        @include iphone8 {
             width: 335px;
         }
     }

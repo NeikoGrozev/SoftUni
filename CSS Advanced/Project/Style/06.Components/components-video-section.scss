@@ -6,7 +6,7 @@
         top: 36px;
         right: 0;
 
-        @include phone {
+        @include iphone8 {
             width: 335px;
             height: 190px;
             top: 0;
@@ -18,7 +18,7 @@
         top: 135px;
         right: 190px;
 
-        @include phone {
+        @include iphone8 {
             top: 60px;
             right: 130px;
         }

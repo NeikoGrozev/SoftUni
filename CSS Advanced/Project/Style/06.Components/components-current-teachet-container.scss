@@ -3,12 +3,12 @@
 .current-teacher-container {
     text-align: center;
 
-    @include phone {
+    @include iphone8 {
         justify-self: center;
     }
 
     &__mobile-hidden {
-        @include phone {
+        @include iphone8 {
             display: none;
         }
     }
