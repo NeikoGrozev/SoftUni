@@ -1,8 +1,9 @@
 @import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-border-radius.scss";
 
 .btn {
     box-shadow: $btn-shadow;
-    border-radius: 100px;
+    border-radius: $border-radius-100;
     border: none;
     outline: none;
     padding: 10px 22px;

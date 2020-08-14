@@ -1,4 +1,5 @@
 @import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-border-radius.scss";
 
     .contact-us-container {
         margin-top: 180px;
@@ -20,7 +21,7 @@
 
         input {
             border: 1px solid $grey--500;
-            border-radius: 6px;
+            border-radius: $border-radius-6;
             padding: 16px;
             
         }

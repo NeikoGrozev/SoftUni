@@ -1,10 +1,11 @@
 @import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-border-radius.scss";
 
 select {
     width: 100%;
     padding: 12px 60px 12px 14px;
     margin: 8px auto;
-    border-radius: 6px;
+    border-radius: $border-radius-6;
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;

@@ -1,4 +1,5 @@
 @import "../01.Setting/settings-colors.scss";
+@import "../01.Setting/settings-border-radius.scss";
 
 .hover-item {
     display: none;
@@ -8,7 +9,7 @@
     background-color: $secondary--800;
     width: 172px;
     height: 172px;
-    border-radius: 50%;
+    border-radius: $border-radius-50-percent;
     opacity: 0.8;
 
     p {
