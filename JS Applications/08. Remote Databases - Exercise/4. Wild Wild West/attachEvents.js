@@ -6,7 +6,8 @@ const elements = {
     playersDiv: () => document.querySelector('#players'),
     canvas: () => document.querySelector('#canvas'),
     saveBtn: () => document.querySelector('#save'),
-    reloadBtn: () => document.querySelector('#reload')
+    reloadBtn: () => document.querySelector('#reload'),
+    fieldsets: () => document.querySelectorAll('fieldset')
 }
 
 function attachEvents() {
@@ -109,6 +110,10 @@ function playGame(e) {
     elements.reloadBtn().style.display = 'inline-block';
 
     loadCanvas(player);
+
+    elements.fieldsets().forEach(x => {
+        x.style.display = 'none';
+    })
 }
 
 function addPlayer(e) {
