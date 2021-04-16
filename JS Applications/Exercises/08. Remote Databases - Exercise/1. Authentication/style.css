@@ -1,0 +1,62 @@
+#nav {
+    text-align: center;
+}
+
+#nav button {
+    background-color: chartreuse;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 5px 15px;
+}
+
+#logoutBtnNav {
+    display: none;
+}
+
+#register,
+#login,
+#loginMessage,
+#errorMessage,
+#passwordErrorMessage {
+    display: none;
+    text-align: center;
+}
+
+#register div,
+#login div {
+    margin: 20px;
+}
+
+label {
+    font-size: 16px;
+}
+
+input {
+    margin: 5px 0;
+    margin-right: 50px;
+}
+
+hr {
+    background-color: aqua;
+    height: 1px;
+}
+
+#registerBtn,
+#loginBtn {
+    background-color: orange;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#errorMessage,
+#passwordErrorMessage {
+    background-color: orangered;
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+}

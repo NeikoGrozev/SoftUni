@@ -1,0 +1,19 @@
+{{>header}}
+<div id="detailsMovie">
+    <h1>Details</h1>
+    <div class="movie">
+        <h2>Title: {{movie.title}}</h2>
+        <img
+            src="{{movie.imageUrl}}">
+        <p>{{description}}</p>
+        <h2>Genres</h2>
+        <ul class="genres">
+            <li>{{movie.genres}}</li>
+        </ul>
+        <p>Available Tickets: {{movie.tickets}}</p>
+        {{#if isHaveTickets}}
+        <button><a href="/buy/{{params.id}}">Buy Ticket</a></button>
+        {{/if}}
+    </div>
+</div>
+{{>footer}}
