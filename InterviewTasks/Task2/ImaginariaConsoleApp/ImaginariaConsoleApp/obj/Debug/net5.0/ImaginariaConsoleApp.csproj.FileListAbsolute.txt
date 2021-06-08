@@ -1,0 +1,16 @@
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ImaginariaConsoleApp.exe
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ImaginariaConsoleApp.deps.json
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ImaginariaConsoleApp.runtimeconfig.json
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ImaginariaConsoleApp.runtimeconfig.dev.json
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ImaginariaConsoleApp.dll
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ref\ImaginariaConsoleApp.dll
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\bin\Debug\net5.0\ImaginariaConsoleApp.pdb
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.csprojAssemblyReference.cache
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.AssemblyInfoInputs.cache
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.AssemblyInfo.cs
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.csproj.CoreCompileInputs.cache
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.dll
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ref\ImaginariaConsoleApp.dll
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.pdb
+F:\GitHub\SoftUni\InterviewTasks\Task2\ImaginariaConsoleApp\ImaginariaConsoleApp\obj\Debug\net5.0\ImaginariaConsoleApp.genruntimeconfig.cache
