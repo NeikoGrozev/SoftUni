@@ -1,0 +1,9 @@
+<h1>Catalog page</h1>
+<form method="POST" action="/create">
+    <label>Name<input type="text" name="name"></label>
+    <label>Age<input type="number" name="age" min="0" max="120"></label>
+    <button type="submit">Create</button>
+</form>
+<ul>
+   {{peoples}}
+</ul>
